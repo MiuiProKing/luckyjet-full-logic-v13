@@ -17,6 +17,31 @@
 .live-coefficients-footer{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-top:18px;padding-top:13px;border-top:1px solid #29374c}.live-coefficients-footer p{margin:0;font-size:11px;color:#a2b1c8;line-height:1.7;overflow-wrap:anywhere}.live-coefficients-footer .button{flex-shrink:0}.live-connection-error{margin-top:12px;padding:12px;border:1px solid #734c60;border-radius:9px;background:#321d2a;color:#ffb6d2;font-size:12px}.live-connection-error .text-button{display:block;margin-top:8px;font-size:12px}
 @media(max-width:680px){.live-coefficients{padding:17px 14px;margin-bottom:16px}.live-coefficients-header h2{font-size:14px}.live-coefficients-header .status-pill{font-size:7px;letter-spacing:.3px}.live-coefficient-hero{margin:12px 0 16px;gap:12px}.live-coefficient-value{font-size:49px}.live-coefficient-hero>span{font-size:10px;max-width:105px}.live-coefficients-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}.live-coefficient-chip{font-size:12px;padding:9px 3px;border-radius:8px}.live-feed-empty{grid-column:1/-1;font-size:11px;line-height:1.8}.live-coefficients-footer{align-items:flex-start;flex-direction:column;gap:9px;margin-top:14px}.live-coefficients-footer p{font-size:10px}.live-coefficients-footer .button{font-size:10px;min-height:33px;padding:8px 11px}.page-heading{margin-bottom:17px}.page-heading h1{font-size:25px}.page-heading p{display:none}.heading-actions{gap:7px}}
 @media(max-width:340px){.live-coefficients-list{grid-template-columns:repeat(4,minmax(0,1fr))}.live-coefficients-header{align-items:flex-start;flex-direction:column;gap:8px}}
+
+/* Observed-history analytics */
+.analytics-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-bottom:18px}
+.analytics-grid>*{min-width:0}.analytics-wide{grid-column:1/-1}.analytics-panel{min-width:0;margin-bottom:18px}
+.analytics-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.analytics-stat{min-width:0;padding:17px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.analytics-stat>span{display:block;color:var(--muted);font-size:10px}.analytics-stat>strong{display:block;margin-top:8px;font-size:clamp(20px,3vw,30px);font-weight:550;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.analytics-stat>small{display:block;color:#737f98;font-size:9px;margin-top:5px}.analytics-stat.gold strong{color:var(--gold)}
+.analytics-distribution{display:grid;gap:13px;margin-top:18px}.analytics-dist-row{display:grid;grid-template-columns:88px minmax(0,1fr) 76px;align-items:center;gap:12px;font-size:11px}
+.analytics-dist-track{height:9px;background:#252938;border-radius:8px;overflow:hidden}.analytics-dist-track i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#7250bc,#bca0ff)}
+.analytics-dist-values{text-align:right;font-variant-numeric:tabular-nums}.analytics-dist-values b,.analytics-dist-values small{display:block;font-weight:500}.analytics-dist-values small{font-size:9px;color:var(--muted)}
+.analytics-table{min-width:670px}.analytics-table td{vertical-align:top}.analytics-table small{display:block;font-size:8px;color:#77839c;margin-top:3px}.analytics-empty{color:var(--muted);font-size:11px;line-height:1.8}
+.analytics-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:12px;align-items:end;margin-top:20px}
+.analytics-controls label,.analytics-scope-label{display:block;font-size:10px;color:var(--muted)}
+.analytics-controls input,.analytics-scope-label select{display:block;min-width:0;width:100%;margin-top:7px;background:#0a0f19;border:1px solid #343c51;border-radius:9px;min-height:42px;padding:10px 11px;color:var(--ink);font:inherit;font-size:12px}
+.analytics-controls .button{min-height:42px;white-space:normal}.analytics-scope-label{min-width:140px;max-width:200px}.analytics-controls input:focus{border-color:#a58adf}
+.analytics-results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-block:22px}.analytics-results>div{min-width:0}.analytics-results span{display:block;font-size:9px;color:var(--muted)}
+.analytics-results strong{display:block;font-size:23px;font-weight:550;font-variant-numeric:tabular-nums;margin-top:6px;overflow-wrap:anywhere}.analytics-results .positive{color:var(--green)}.analytics-results .negative{color:var(--pink)}
+.analytics-chart{min-width:0;width:100%;height:210px;margin-top:16px}.analytics-chart svg{display:block;width:100%;height:100%}.analytics-replay-note{font-size:10px;color:var(--muted);line-height:1.8;margin:12px 0 0}
+.analytics-quality{font-size:10px;color:var(--muted);line-height:1.8;margin:0 0 18px}.analytics-form-error{min-height:16px;color:var(--pink);font-size:11px;line-height:1.7;margin-top:10px}
+.analytics-link{margin:0 0 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 20px;border:1px solid #443359;background:linear-gradient(110deg,#20182d,#111723);border-radius:14px}
+.analytics-link strong{display:block;font-size:12px;font-weight:550}.analytics-link p{font-size:10px;color:var(--muted);margin:5px 0 0}.analytics-link .button{flex-shrink:0}
+@media(max-width:1000px){.analytics-grid{grid-template-columns:minmax(0,1fr)}.analytics-controls{grid-template-columns:repeat(3,minmax(0,1fr))}.analytics-controls .button{grid-column:1/-1}.analytics-summary{gap:9px}.analytics-stat{padding:14px}}
+@media(max-width:680px){.navigation{gap:2px}.nav-item{min-width:0;white-space:normal}.nav-item span{overflow-wrap:anywhere}.analytics-summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.analytics-stat>strong{font-size:25px}.analytics-grid{gap:14px}.analytics-panel{margin-bottom:14px}.analytics-dist-row{grid-template-columns:70px minmax(0,1fr) 62px;gap:8px;font-size:10px}.analytics-controls{grid-template-columns:minmax(0,1fr)}.analytics-controls .button{grid-column:auto}.analytics-controls input{font-size:16px}.analytics-results{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.analytics-results strong{font-size:22px}.analytics-chart{height:185px}.analytics-link{align-items:flex-start;flex-direction:column;padding:17px}.analytics-scope-label{min-width:0;max-width:none;width:100%}.analytics-quality{font-size:9px}.analytics-table{min-width:620px}}
+
 </style>
 </head>
 <body>
@@ -43,6 +68,7 @@
   <nav class="navigation" aria-label="Основная навигация">
     <button class="nav-item active" data-tab="dashboard"><svg class="icon"><use href="#i-grid"/></svg><span>Обзор</span><em>01</em></button>
     <button class="nav-item" data-tab="history"><svg class="icon"><use href="#i-clock"/></svg><span>История раундов</span><em id="nav-count">0</em></button>
+    <button class="nav-item" data-tab="analytics"><svg class="icon"><use href="#i-grid"/></svg><span>Аналитика</span></button>
     <button class="nav-item" data-tab="journal"><svg class="icon"><use href="#i-check"/></svg><span>Журнал окон</span></button>
     <button class="nav-item" data-tab="logic"><svg class="icon"><use href="#i-code"/></svg><span>Вся логика</span><em>De / Ce</em></button>
     <button class="nav-item" data-tab="sources"><svg class="icon"><use href="#i-link"/></svg><span>Источники</span></button>
@@ -74,15 +100,30 @@
       <article class="panel prediction-panel"><div class="panel-top"><span class="eyebrow"><svg class="icon"><use href="#i-zap"/></svg>ОБЫЧНЫЙ РАСЧЁТ · De</span><span class="tag" id="prediction-mode">ОЖИДАНИЕ</span></div><div class="prediction-body"><div><p class="card-label">Расчётный коэффициент</p><div class="target-number" id="target-coef">—<span>×</span></div><div class="pattern-tag" id="prediction-rule">Нужна история раундов</div></div><div class="score-block"><div class="score-ring" id="score-ring"><span id="score-value">—</span></div><small>БАЛЛ АЛГОРИТМА / 100</small></div></div><div class="window-row"><div><span>Расчётное окно</span><strong id="prediction-window">—</strong></div><div><span id="countdown-label">До начала</span><strong id="prediction-countdown">—</strong></div><button class="icon-button" data-tab="logic" aria-label="Как устроен расчёт"><svg class="icon"><use href="#i-code"/></svg></button></div><p class="basis" id="prediction-basis">Расчёт появится после загрузки минимум 20 раундов с точным временем.</p><div class="card-foot"><span class="tiny-dot"></span><span id="prediction-lock">Окно сохраняется до завершения</span><button class="text-button" data-action="recalculate">Пересчитать</button></div></article>
       <article class="panel big-panel"><div class="panel-top"><span class="eyebrow gold-text"><svg class="icon"><use href="#i-zap"/></svg>БОЛЬШИЕ КОЭФФИЦИЕНТЫ · Ce</span></div><div class="big-target" id="big-target">100<span>×+</span></div><h2 id="big-heading">Ожидаем сочетание условий</h2><p id="big-basis">Медианные интервалы, MAD, скопления 20× / 50× и пуассоновская оценка.</p><div class="big-info"><div><span>Расчётное окно</span><strong id="big-window">—</strong></div><div><span>Балл / 100</span><strong id="big-score">—</strong></div></div><div class="big-note">Появляется только при выполнении исходных правил Ce.</div></article>
     </div>
+    <aside class="analytics-link"><div><strong>Частоты, интервалы и просадка</strong><p>По нашей загруженной истории · крупные коэффициенты до 1000× и выше</p></div><button class="button secondary" data-tab="analytics">Открыть аналитику<svg class="icon"><use href="#i-arrow"/></svg></button></aside>
     <article class="panel chart-panel"><div class="panel-top"><div><h2>Пульс коэффициентов</h2><p class="panel-subtitle">Последовательность последних раундов · логарифмическая шкала</p></div><label class="compact-select"><span class="sr-only">Количество раундов на графике</span><select id="chart-count"><option value="50">50 раундов</option><option value="100">100 раундов</option><option value="200">200 раундов</option></select></label></div><div class="chart-wrap" id="chart"><div class="empty-chart">График появится после загрузки истории</div></div><div class="chart-footer"><div class="legend"><span><i class="blue-bg"></i>менее 2×</span><span><i class="purple-bg"></i>2–10×</span><span><i class="gold-bg"></i>10×+</span><span><i class="pink-bg"></i>100×+</span></div><span id="chart-span">—</span></div></article>
     <div class="lower-grid"><article class="panel"><div class="panel-top"><h2>Интервалы крупных раундов</h2><label class="compact-select"><span class="sr-only">Порог крупного коэффициента</span><select id="gap-threshold"><option value="10">от 10×</option><option value="20">от 20×</option><option value="50">от 50×</option><option value="100">от 100×</option></select></label></div><div class="gap-summary"><div><span>Медиана интервала</span><strong id="gap-median">—</strong></div><div><span>MAD интервалов</span><strong id="gap-mad">—</strong></div><div><span>После последнего</span><strong id="gap-age">—</strong></div></div><div class="table-scroll"><table><thead><tr><th>Время · <span data-zone>Киев</span></th><th>Коэффициент</th><th>Интервал</th><th>Раундов*</th></tr></thead><tbody id="gap-table"><tr><td colspan="4" class="empty-cell">История пока не загружена</td></tr></tbody></table></div><p class="table-note">* Количество записей между событиями в доступной истории; пропуски игрового потока не исключены.</p></article><article class="panel recent-panel"><div class="panel-top"><h2>Последние раунды</h2><button class="text-button" data-tab="history">Все<svg class="icon"><use href="#i-arrow"/></svg></button></div><div id="recent-rounds" class="round-grid"></div><div class="streak-row"><span>Серия ниже 2×</span><strong id="streak-value">—</strong></div><div class="streak-row"><span>Временных меток для расчёта</span><strong id="exact-value">0</strong></div><p class="quiet-note">Баллы правил описывают расчёт и не являются измеренной вероятностью выигрыша.</p></article></div>
     <footer class="dashboard-footer"><span id="data-count">0 раундов в истории</span><span><span data-zone>Киев</span> · оригинальные формулы · без случайных прогнозов</span><button class="text-button" data-tab="sources">Источники и ограничения<svg class="icon"><use href="#i-arrow"/></svg></button></footer>
   </section>
+  <section id="view-analytics" class="view" aria-labelledby="analytics-title">
+    <div class="page-heading"><div><div class="eyebrow">OBSERVED HISTORY</div><h1 id="analytics-title">Аналитика истории</h1><p>Частоты, крупные коэффициенты и проверка условной фиксированной ставки.</p></div><label class="analytics-scope-label">Выборка<select id="analytics-scope"><option value="2000">До 2000 записей</option><option value="500">Последние 500</option><option value="100">Последние 100</option><option value="20">Последние 20</option></select></label></div>
+    <div class="notice">Расчёты используют загруженную историю выбранного источника. Частоты и интервалы описывают прошлое; они не подтверждают повышенный шанс следующего раунда.</div>
+    <div class="analytics-summary"><article class="analytics-stat"><span>Записей в выборке</span><strong id="analytics-total">0</strong><small>Объединены по ID</small></article><article class="analytics-stat gold"><span>Частота 10×+</span><strong id="analytics-ten">—</strong><small>Наблюдаемая доля</small></article><article class="analytics-stat gold"><span>Частота 100×+</span><strong id="analytics-hundred">—</strong><small>Наблюдаемая доля</small></article><article class="analytics-stat"><span>Максимальный коэффициент</span><strong id="analytics-maximum">—</strong><small>В выбранной истории</small></article></div>
+    <p class="analytics-quality" id="analytics-quality">Загрузите историю для расчёта.</p>
+    <article class="panel analytics-panel"><div class="panel-top"><div><h2>Распределение коэффициентов</h2><p class="panel-subtitle">Количество и доля в каждом диапазоне</p></div><span class="tag" id="analytics-source-kind">НЕТ ДАННЫХ</span></div><div id="analytics-distribution" class="analytics-distribution"></div></article>
+    <article class="panel analytics-panel"><div class="panel-top"><div><h2>Крупные результаты и интервалы</h2><p class="panel-subtitle">Пороги от 2× до 1000× · время по выбранному часовому поясу</p></div></div><div class="table-scroll"><table class="analytics-table"><thead><tr><th>Порог</th><th>Частота</th><th>Последний результат</th><th>После него*</th><th>Медиана шага*</th><th>Медиана времени</th></tr></thead><tbody id="analytics-thresholds"></tbody></table></div><p class="table-note">* Шаг и ожидание измеряются в имеющихся записях. Пропуски потока не исключены, игровой порядок не подтверждён. Временной интервал считается только между соседними пороговыми событиями с точным временем; оценочные метки его разрывают.</p></article>
+    <article class="panel analytics-panel"><div class="panel-top"><div><h2>Проверка фиксированной ставки</h2><p class="panel-subtitle">Условный расчёт на каждом наблюдаемом раунде · без реальных ставок</p></div><span class="tag">ПО ИСТОРИИ</span></div><p class="analytics-replay-note">Все суммы — условные единицы. Задайте одинаковую ставку и коэффициент выхода. Это отдельная проверка по архиву, а не прибыль сигналов De / Ce.</p>
+      <form id="analytics-form" novalidate><div class="analytics-controls"><label>Начальный баланс, ед.<input id="analytics-bankroll" type="number" min="0.01" max="1000000000" step="any" value="1000" inputmode="decimal"></label><label>Одинаковая ставка, ед.<input id="analytics-stake" type="number" min="0.01" step="any" value="1" inputmode="decimal"></label><label>Коэффициент выхода<input id="analytics-target" type="number" min="1.01" max="10000" step="0.01" value="2" inputmode="decimal"></label><button class="button primary" type="submit">Рассчитать по истории</button></div><div id="analytics-error" class="analytics-form-error" role="alert"></div></form>
+      <div class="analytics-results"><div><span>Итоговый баланс, ед.</span><strong id="analytics-final-balance">—</strong></div><div><span>Изменение баланса, ед.</span><strong id="analytics-profit">—</strong></div><div><span>Максимальная просадка</span><strong id="analytics-max-drawdown">—</strong></div><div><span>Попадания в заданную цель</span><strong id="analytics-hit-rate">—</strong></div></div><p id="analytics-replay-summary" class="analytics-replay-note">Результат появится после загрузки истории.</p>
+    </article>
+    <div class="analytics-grid"><article class="panel"><h2>Условный баланс</h2><p class="panel-subtitle">Одинаковая ставка · порядок имеющихся записей</p><div id="analytics-balance-chart" class="analytics-chart"></div></article><article class="panel"><h2>Просадка от достигнутого пика</h2><p class="panel-subtitle">Доля снижения условного баланса</p><div id="analytics-drawdown-chart" class="analytics-chart"></div></article></div>
+  </section>
+
   <section id="view-history" class="view" aria-labelledby="history-title"><div class="page-heading"><div><div class="eyebrow">ROUND ARCHIVE</div><h1 id="history-title">История раундов</h1><p>Фильтры, точное время и экспорт доступных записей.</p></div><div class="heading-actions"><button class="button secondary" data-action="export-json">JSON<svg class="icon"><use href="#i-download"/></svg></button><button class="button primary" data-action="export-csv">CSV<svg class="icon"><use href="#i-download"/></svg></button></div></div><div class="panel"><div class="filter-row"><label>Дата · <span data-zone>Киев</span><input type="date" id="history-date"></label><label>Минимум, ×<input type="number" min="1" step="0.01" value="1" id="history-min"></label><label class="search-field">Поиск по ID<input type="search" id="history-search" placeholder="Номер раунда"></label><button class="button secondary" data-action="reset-filters">Сбросить</button></div><div class="table-scroll"><table><thead><tr><th>Время · <span data-zone>Киев</span></th><th>Коэффициент</th><th>ID раунда</th><th>Время</th></tr></thead><tbody id="history-table"></tbody></table></div><div class="history-bottom"><span id="history-summary">0 записей</span><button class="button secondary" data-action="more-history" id="more-history">Показать ещё</button></div></div></section>
   <section id="view-journal" class="view" aria-labelledby="journal-title"><div class="page-heading"><div><div class="eyebrow">WINDOW JOURNAL</div><h1 id="journal-title">Журнал окон</h1><p>Фиксация расчёта до события и проверка последующих раундов.</p></div><button class="button secondary" data-action="export-journal">Экспорт<svg class="icon"><use href="#i-download"/></svg></button></div><div class="notice">Окна записываются только при свежем потоке API. Импорт, учебный пример и старые раунды не создают попаданий. Отсутствие попадания при неполной истории остаётся неподтверждённым.</div><div class="journal-summary"><div class="panel"><span>Достигнута цель</span><strong id="journal-hit">0</strong></div><div class="panel"><span>Ожидают проверки</span><strong id="journal-pending">0</strong></div><div class="panel"><span>Не подтверждено</span><strong id="journal-unknown">0</strong></div></div><article class="panel"><div class="panel-top"><h2>Расчётные окна</h2><button class="text-button" data-action="clear-journal">Очистить журнал</button></div><div class="table-scroll"><table><thead><tr><th>Создано</th><th>Цель</th><th>Окно · <span data-zone>Киев</span></th><th>Проверка</th><th>Подтверждающий раунд</th></tr></thead><tbody id="journal-table"></tbody></table></div></article></section>
   <section id="view-logic" class="view" aria-labelledby="logic-title"><div class="page-heading"><div><div class="eyebrow">ENGINE REFERENCE</div><h1 id="logic-title">Вся открытая логика</h1><p>Те же формулы и приоритеты правил в читаемой реализации.</p></div><span class="source-date">Проверено 24.10.2026</span></div><div class="notice">В этот HTML перенесены найденные браузерные расчёты. Закрытые серверные сборщики, платные ключи и исходники Telegram-бота не публиковались и сюда не входят.</div><div class="logic-columns"><article class="panel prose"><div class="panel-top"><h2>Обычный расчёт · De</h2><span class="tag">МИНИМУМ 20 РАУНДОВ</span></div><p>Правила проверяются по порядку. Выполняется первое подошедшее; большой расчёт Ce прикрепляется отдельно.</p><ol class="rule-list"><li><b>Цикл от 10×</b><span>Не менее 8 событий; MAD меньше 0,6 медианы интервала. Проверяется близость к расчётному времени. Цель — максимум последних 80 раундов, делённый на 2, 3 или 4; границы 2–20×.</span></li><li><b>15 подряд ниже 2×</b><span>Цель = геометрическое среднее × 2,5 + медиана; границы 2,5–15×. Начало через 90 секунд, окно 2 минуты.</span></li><li><b>Не менее 3 значений от 20× за 30 раундов</b><span>Геометрическое среднее крупных коэффициентов делится на 3, 4 или 5; цель ограничена 2–12×.</span></li><li><b>Не менее 3 значений 5–9,99× за 60 раундов</b><span>При доле значений ниже 2× больше 55% либо σ50 выше 1,4 среднего применяется множитель 0,45, иначе 0,7. Границы 2–4,5× либо 3–7×.</span></li><li><b>Общий расчёт</b><span>База = 0,5 × EMA20 + 0,3 × EMA50 + 0,2 × среднее 50. Далее применяются часовой множитель, максимум минуты +2 и поправка 1,6. При нестабильности цель ограничивается 3,2× либо 5×.</span></li></ol><p class="formula">EMA20: α = 0,25 · EMA50: α = 0,12</p><p>Часовые и минутные группы используют выбранный часовой пояс. Уже созданный расчёт сохраняется до конца окна и как минимум на минуту.</p></article><article class="panel prose"><div class="panel-top"><h2>Большие коэффициенты · Ce</h2><span class="tag gold-tag">100× / 120×</span></div><ol class="rule-list"><li><b>Медианный цикл от 100×</b><span>Не менее 5 событий. Разброс = 1,4826 × MAD, с ограничением 2–12 минут; проверяются устойчивость и положение относительно ожидаемого времени.</span></li><li><b>Скопление крупных значений</b><span>За последние 80 раундов не менее 6 результатов от 20× и не менее 3 от 50×. Цель 120×, начало через 3 минуты, окно 6 минут.</span></li><li><b>Пуассоновская оценка задержки</b><span>Не менее 4 событий от 100× и 80 раундов. λ = число событий / длительность истории. При 1 − exp(−λ × прошедшее время) ≥ 0,75 формируется кандидат на 100×.</span></li><li><b>Выбор кандидата</b><span>Берётся наибольший балл. Одиночный кандидат с баллом ниже 75 отбрасывается; при нескольких кандидатах добавляется 5, максимум 92.</span></li></ol><p class="formula">MAD = median(|x − median(x)|)</p><p>Пуассоновская величина здесь относится к прошедшему интервалу. Она не доказывает повышенную вероятность следующего независимого раунда.</p></article></div><article class="panel prose"><h2>Что означает балл и как проверяются окна</h2><p>Числа в исходном интерфейсе с обозначением «надёжности» вычисляются эвристическими правилами. В этой версии они подписаны как <b>балл алгоритма</b>: измеренной точности или обучения модели в опубликованном модуле нет.</p><p>Попадание подтверждается только точным раундом после создания записи и внутри её временного окна. Если подходящий раунд не найден, результат остаётся неподтверждённым: полнота игрового потока не доказана. Журнал локальный; закрытая вкладка не наблюдает новые события.</p><p>Для сравнения найденная формула BABEL: <code>min(среднее последних 3 × 1,10; 2,40)</code>. Она отображается отдельно и не меняет De / Ce. <strong id="babel-comparison">Нужны 3 раунда.</strong></p><details><summary>Показать исходник этой реализации</summary><pre id="engine-source"></pre></details></article></section>
   <section id="view-sources" class="view" aria-labelledby="sources-title"><div class="page-heading"><div><div class="eyebrow">SOURCES & CONNECTION</div><h1 id="sources-title">Источники</h1><p>Происхождение формул, подключение данных и найденные проекты.</p></div><button class="button primary" data-action="settings">Подключить API<svg class="icon"><use href="#i-arrow"/></svg></button></div><article class="panel prose"><h2>Текущее подключение · наш Supabase</h2><p>Коэффициенты автоматически загружаются из нашей облачной истории LuckyJet. Подключение работает через сервер этой страницы; игровая сессия и ключ базы в браузер не передаются.</p><p>При запуске загружается до 2000 раундов, затем только новые записи. Объединение идёт по ID: одинаковые коэффициенты разных раундов сохраняются. В истории показывается время из базы по Киеву; оценочные метки исключаются из расчёта времени. Порядок поступления не означает подтверждённый игровой порядок.</p><p>Обычное окно и крупная цель проверяют текущую историю независимо. Для правила 120× нужны минимум 3 результата от 50× и 6 результатов от 20× среди последних 80 раундов: начало через 3 минуты, длительность 6 минут. Объявленное окно не сдвигается. Балл правил не является проверенной вероятностью попадания.</p></article><div class="logic-columns"><article class="panel prose"><h2>Оригинал: Historique LuckyJet</h2><p><a href="https://historique-luckyjet.shop/" target="_blank" rel="noopener noreferrer">historique-luckyjet.shop</a> · <a href="https://historique-luckyjet.lovable.app/" target="_blank" rel="noopener noreferrer">зеркало Lovable</a></p><p>Публичный модуль расчётов: <a href="https://historique-luckyjet.shop/assets/PredictionPanel-CBGsolff.js" target="_blank" rel="noopener noreferrer">PredictionPanel-CBGsolff.js</a>.</p><p class="hash">SHA-256: a7a322910c8658e41bfa82e932174eeff4419598c4d53b760c0df744b04ac08e</p><p>Самостоятельная реализация математических правил; оформление и интерфейс этой панели созданы отдельно. Копирования закрытого серверного кода нет.</p><p>Связанные страницы: <a href="https://historique-luckyjet.shop/historique" target="_blank" rel="noopener noreferrer">архив</a>, <a href="https://historique-luckyjet.shop/rocketqueen" target="_blank" rel="noopener noreferrer">Rocket Queen</a>, <a href="https://historique-luckyjet.shop/aviator" target="_blank" rel="noopener noreferrer">Aviator</a>, <a href="https://historique-luckyjet.shop/jetx" target="_blank" rel="noopener noreferrer">JetX</a>.</p></article><article class="panel prose"><h2>API оригинального сервиса</h2><pre>GET /api/public/v1/rounds?game=luckyjet&limit=500
-Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий ключ сервиса. Без ключа при проверке получен ответ <code>401 missing_api_key</code>. В HTML ключ не вложен.</p><p>Поля: <code>round_id</code>, <code>coefficient</code>, <code>at</code>. Для этого дополнительного источника опрос настраивается;, история в этой панели — до 2000 записей. В ответе сервиса лимит 1–500.</p><p>Если браузер блокирует соединение из-за CORS, используйте импорт истории либо собственный разрешённый JSON endpoint. Общедоступные сторонние прокси не используются.</p></article></div><article class="panel prose"><h2>Другие найденные источники</h2><div class="table-scroll"><table><thead><tr><th>Проект</th><th>Что найдено</th></tr></thead><tbody><tr><td><a href="https://gamedata365.com/games/lucky_jet" target="_blank" rel="noopener noreferrer">GameData365</a></td><td>История и статистика; сервис заявляет запись реальных результатов. В эту панель его поток автоматически не подключён.</td></tr><tr><td><a href="https://luckyjettracker.com/" target="_blank" rel="noopener noreferrer">LuckyJetTracker</a> · <a href="https://github.com/rogervilla2024/luckyjet-tracker" target="_blank" rel="noopener noreferrer">GitHub</a></td><td>На сайте указана генерация раундов по модели RTP. Такая история не используется здесь как реальная.</td></tr><tr><td><a href="https://github.com/babelse/babelse.github.com/blob/main/lucky-jet.html" target="_blank" rel="noopener noreferrer">BABEL HTML</a></td><td>Простая формула среднего трёх значений с потолком 2,40×.</td></tr><tr><td><a href="https://github.com/davisclby73-sketch/LUCKYJET-AND-MINES/blob/main/src/utils/predictorEngine.ts" target="_blank" rel="noopener noreferrer">LUCKYJET-AND-MINES</a></td><td>Найдены случайный выбор цели, времени и «надёжности». Такой генератор не используется для сигналов этой панели.</td></tr></tbody></table></div></article><article class="panel prose"><h2>Работа с файлом</h2><p>Один HTML: стили, формулы и интерфейс встроены. Он не требует установки библиотек. Для live нужны интернет и доступная сессия Crash Gateway. Подключение запускается автоматически. Импортированные записи сохраняются локально, если браузер разрешает хранилище.</p><p>Импорт JSON: массив объектов или объект <code>{"rounds": [...]}</code>. CSV: заголовки <code>round_id,coefficient,at</code>. Время ISO 8601 с зоной, например <code>2026-10-24T06:30:00Z</code>. Время без зоны принимается как UTC. Записи без корректного времени не участвуют в расчёте.</p><p>Customer ID и Session ID из присланного кода встроены в этот HTML. Изменённая сессия хранится в памяти вкладки, пока вы не включили запоминание. Сессия отправляется только в Crash Gateway и не попадает в экспорт раундов или журнала.</p><button class="button secondary" data-action="export-example">Скачать пример формата JSON<svg class="icon"><use href="#i-download"/></svg></button></article></section>
+Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий ключ сервиса. Без ключа при проверке получен ответ <code>401 missing_api_key</code>. В HTML ключ не вложен.</p><p>Поля: <code>round_id</code>, <code>coefficient</code>, <code>at</code>. Для этого дополнительного источника опрос настраивается;, история в этой панели — до 2000 записей. В ответе сервиса лимит 1–500.</p><p>Если браузер блокирует соединение из-за CORS, используйте импорт истории либо собственный разрешённый JSON endpoint. Общедоступные сторонние прокси не используются.</p></article></div><article class="panel prose"><h2>Другие найденные источники</h2><div class="table-scroll"><table><thead><tr><th>Проект</th><th>Что найдено</th></tr></thead><tbody><tr><td><a href="https://gamedata365.com/games/lucky_jet" target="_blank" rel="noopener noreferrer">GameData365</a></td><td>История и статистика; сервис заявляет запись реальных результатов. В эту панель его поток автоматически не подключён.</td></tr><tr><td><a href="https://luckyjettracker.com/" target="_blank" rel="noopener noreferrer">LuckyJetTracker</a> · <a href="https://github.com/rogervilla2024/luckyjet-tracker" target="_blank" rel="noopener noreferrer">GitHub</a></td><td>На сайте указана генерация раундов по модели RTP. Такая история не используется здесь как реальная.</td></tr><tr><td><a href="https://github.com/babelse/babelse.github.com/blob/main/lucky-jet.html" target="_blank" rel="noopener noreferrer">BABEL HTML</a></td><td>Простая формула среднего трёх значений с потолком 2,40×.</td></tr><tr><td><a href="https://github.com/davisclby73-sketch/LUCKYJET-AND-MINES/blob/main/src/utils/predictorEngine.ts" target="_blank" rel="noopener noreferrer">LUCKYJET-AND-MINES</a></td><td>Найдены случайный выбор цели, времени и «надёжности». Такой генератор не используется для сигналов этой панели.</td></tr></tbody></table></div></article><article class="panel prose"><h2>Работа с файлом</h2><p>Один HTML: стили, формулы и интерфейс встроены. Он не требует установки библиотек. Для live нужны интернет и доступный сервер нашей истории Supabase. Подключение запускается автоматически. Импортированные записи сохраняются локально, если браузер разрешает хранилище.</p><p>Импорт JSON: массив объектов или объект <code>{"rounds": [...]}</code>. CSV: заголовки <code>round_id,coefficient,at</code>. Время ISO 8601 с зоной, например <code>2026-10-24T06:30:00Z</code>. Время без зоны принимается как UTC. Записи без корректного времени не участвуют в расчёте.</p><p>Ключ Supabase хранится на сервере и не вставляется в HTML. Подключение к нашей истории запускается автоматически; вводить игровую сессию здесь не нужно.</p><button class="button secondary" data-action="export-example">Скачать пример формата JSON<svg class="icon"><use href="#i-download"/></svg></button></article></section>
 </main></div></div>
 <div class="modal-backdrop" id="settings-dialog" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title"><div class="modal-header"><div><div class="eyebrow">CONNECTION</div><h2 id="settings-title">Подключение данных</h2></div><button class="icon-button" data-action="close-settings" aria-label="Закрыть"><svg class="icon"><use href="#i-close"/></svg></button></div><form id="settings-form"><label>Источник<select id="setting-source"><option value="supabase">Наш Supabase · LuckyJet</option><option value="original">Historique LuckyJet · API ключ</option><option value="custom">Мой JSON endpoint</option></select></label><label id="custom-url-label" hidden>Адрес JSON endpoint<input id="setting-url" type="url" placeholder="https://ваш-сервер/history" autocomplete="off"></label><div id="gateway-fields" hidden><label>Customer ID<input id="setting-customer" type="text" autocomplete="off" spellcheck="false"></label><label>Session ID<input id="setting-session" type="password" autocomplete="off" spellcheck="false" placeholder="Сессия из присланного кода"></label></div><label id="api-key-label">API ключ <span class="optional">не попадает в экспорт</span><input type="password" id="setting-key" placeholder="Введите ключ выбранного источника" autocomplete="off" spellcheck="false"></label><label class="check-label"><input type="checkbox" id="setting-remember">Запомнить изменённые данные на этом устройстве</label><div class="form-grid"><label>Опрос<select id="setting-interval"><option value="2500">2,5 секунды</option><option value="5000">5 секунд</option><option value="10000">10 секунд</option><option value="30000">30 секунд</option><option value="60000">60 секунд</option></select></label><label>Глубина анализа<select id="setting-depth"><option value="2000">До 2000 раундов</option><option value="500">500 раундов</option><option value="100">100 раундов</option><option value="50">50 раундов</option><option value="20">20 раундов</option></select></label></div><label>Часовой пояс расчёта<select id="setting-timezone"><option value="Europe/Kyiv">Киев · Europe/Kyiv</option><option value="UTC">UTC</option></select></label><p class="form-note" id="settings-note">Ключ отправляется только выбранному источнику. Получение данных не запускает ставки и не управляет игровым аккаунтом.</p><div class="form-error" id="settings-error" role="alert"></div><div class="modal-actions"><button class="button secondary" type="button" data-action="import">Импорт JSON / CSV</button><button class="button primary" type="submit">Сохранить и подключить<svg class="icon"><use href="#i-arrow"/></svg></button></div></form></section></div>
 <input id="import-file" type="file" accept=".json,.csv,.tsv,application/json,text/csv,text/tab-separated-values" hidden>
@@ -310,6 +351,218 @@ Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий 
   root.LuckyJetCore = Object.freeze({MINUTE, clamp, mean, median, sigma, mad, geometric, maximum, ema, clockParts, gapStats, buckets, predict, bigOpportunity, pinBigOpportunity, De: predict, Ce: bigOpportunity, timestamp, normalizeRows, normalizeGateway, mergeRows, csvRows, evaluateEntry});
 })(typeof window === 'undefined' ? globalThis : window);
 </script>
+<script id="analytics-core">
+(function (root) {
+  'use strict';
+
+  const TARGETS = Object.freeze([2, 5, 10, 20, 50, 100, 200, 500, 1000]);
+  const BINS = Object.freeze([
+    Object.freeze({label: '1–<2×', min: 1, max: 2}),
+    Object.freeze({label: '2–<5×', min: 2, max: 5}),
+    Object.freeze({label: '5–<10×', min: 5, max: 10}),
+    Object.freeze({label: '10–<50×', min: 10, max: 50}),
+    Object.freeze({label: '50–<100×', min: 50, max: 100}),
+    Object.freeze({label: '100×+', min: 100, max: Infinity}),
+  ]);
+
+  function median(values) {
+    if (!values.length) return null;
+    const sorted = values.slice().sort(function (a, b) {return a - b;});
+    const middle = Math.floor(sorted.length / 2);
+    return sorted.length % 2 ? sorted[middle] : sorted[middle - 1] / 2 + sorted[middle] / 2;
+  }
+
+  function knownTime(value) {
+    return typeof value === 'number' && Number.isFinite(value) && Math.abs(value) <= 8640000000000000;
+  }
+
+  // Preserve input order. Duplicate IDs keep their first (newest) occurrence.
+  // Missing/estimated times do not remove valid observed coefficients.
+  function prepare(rows) {
+    if (!Array.isArray(rows)) throw new TypeError('History must be an array.');
+    const seen = new Set();
+    const retained = [];
+    let skipped = 0;
+    for (const row of rows) {
+      const validId = row && (
+        (typeof row.id === 'string' && row.id.trim().length > 0) ||
+        (typeof row.id === 'number' && Number.isFinite(row.id))
+      );
+      if (!validId || typeof row.coefficient !== 'number' || !Number.isFinite(row.coefficient) || row.coefficient < 1) {
+        skipped++;
+        continue;
+      }
+      const id = String(row.id);
+      if (seen.has(id)) {
+        skipped++;
+        continue;
+      }
+      seen.add(id);
+      retained.push({
+        id: id,
+        coefficient: row.coefficient,
+        timestamp: knownTime(row.timestamp) ? row.timestamp : null,
+        estimated: row.estimated === true,
+      });
+    }
+    return {rows: retained, skipped: skipped};
+  }
+
+  function exactTime(row) {
+    return !row.estimated && knownTime(row.timestamp) ? row.timestamp : null;
+  }
+
+  function analyzeHistory(input) {
+    const prepared = prepare(input);
+    const rows = prepared.rows;
+    const total = rows.length;
+    let estimatedCount = 0;
+    let firstAt = null;
+    let lastAt = null;
+    const distribution = BINS.map(function (bin) {
+      return {label: bin.label, min: bin.min, max: bin.max, count: 0, share: 0};
+    });
+    for (const row of rows) {
+      if (row.estimated) estimatedCount++;
+      const at = exactTime(row);
+      if (at !== null) {
+        if (firstAt === null || at < firstAt) firstAt = at;
+        if (lastAt === null || at > lastAt) lastAt = at;
+      }
+      for (const bin of distribution) {
+        if (row.coefficient >= bin.min && row.coefficient < bin.max) {
+          bin.count++;
+          break;
+        }
+      }
+    }
+    for (const bin of distribution) bin.share = total ? bin.count / total : 0;
+
+    // Indices measure recorded rounds, never an inferred count of missed rounds.
+    const chronological = rows.slice().reverse();
+    const thresholds = TARGETS.map(function (target) {
+      let count = 0;
+      let latest = null;
+      let latestIndex = null;
+      let previous = null;
+      let previousIndex = null;
+      let maxGapRecords = null;
+      const recordGaps = [];
+      const timeGaps = [];
+      for (let index = 0; index < chronological.length; index++) {
+        const row = chronological[index];
+        if (row.coefficient < target) continue;
+        count++;
+        if (previous !== null) {
+          const gap = index - previousIndex;
+          recordGaps.push(gap);
+          if (maxGapRecords === null || gap > maxGapRecords) maxGapRecords = gap;
+          const from = exactTime(previous);
+          const to = exactTime(row);
+          if (from !== null && to !== null && to >= from) timeGaps.push(to - from);
+        }
+        // Estimated hits remain boundaries: do not bridge across them.
+        previous = row;
+        previousIndex = index;
+        latest = row;
+        latestIndex = index;
+      }
+      return {
+        target: target,
+        count: count,
+        share: total ? count / total : 0,
+        lastAt: latest === null ? null : exactTime(latest),
+        lastValue: latest === null ? null : latest.coefficient,
+        lastId: latest === null ? null : latest.id,
+        recordsSince: latestIndex === null ? null : total - 1 - latestIndex,
+        medianGapRecords: median(recordGaps),
+        medianGapMs: median(timeGaps),
+        maxGapRecords: maxGapRecords,
+      };
+    });
+    return {
+      total: total,
+      skipped: prepared.skipped,
+      estimatedCount: estimatedCount,
+      firstAt: firstAt,
+      lastAt: lastAt,
+      distribution: distribution,
+      thresholds: thresholds,
+    };
+  }
+
+  function positive(name, value) {
+    if (typeof value !== 'number' || !Number.isFinite(value) || value <= 0) {
+      throw new RangeError(name + ' must be a finite positive number.');
+    }
+  }
+
+  // Conditional replay of a constant stake against the supplied recorded outcomes.
+  // This is not an entry forecast, an executed-bet ledger, or a profit guarantee.
+  function runFixedStake(input, options) {
+    if (options === undefined) options = {};
+    if (options === null || typeof options !== 'object' || Array.isArray(options)) {
+      throw new TypeError('Options must be an object.');
+    }
+    const bankroll = options.bankroll === undefined ? 1000 : options.bankroll;
+    const stake = options.stake === undefined ? 1 : options.stake;
+    const target = options.target === undefined ? 2 : options.target;
+    positive('bankroll', bankroll);
+    positive('stake', stake);
+    positive('target', target);
+    if (stake > bankroll) throw new RangeError('stake must not exceed the initial bankroll.');
+    if (target < 1.01) throw new RangeError('target must be at least 1.01.');
+
+    const chronological = prepare(input).rows.reverse();
+    let balance = bankroll;
+    let peak = bankroll;
+    let wins = 0;
+    let losses = 0;
+    let maxDrawdown = 0;
+    let stopped = false;
+    const curve = [{index: 0, balance: bankroll, drawdown: 0, timestamp: null, id: null}];
+    for (const row of chronological) {
+      const tolerance = Number.EPSILON * Math.max(Math.abs(balance), stake, Number.MIN_VALUE) * 8;
+      if (balance + tolerance < stake) {
+        stopped = true;
+        break;
+      }
+      const won = row.coefficient >= target;
+      let next = balance - stake + (won ? stake * target : 0);
+      if (!Number.isFinite(next)) throw new RangeError('The requested replay exceeds finite numeric precision.');
+      if (next < 0 && next >= -tolerance) next = 0;
+      balance = next;
+      if (won) wins++;
+      else losses++;
+      if (balance > peak) peak = balance;
+      const drawdown = Math.max(0, Math.min(1, (peak - balance) / peak));
+      if (drawdown > maxDrawdown) maxDrawdown = drawdown;
+      curve.push({index: wins + losses, balance: balance, drawdown: drawdown, timestamp: exactTime(row), id: row.id});
+    }
+    const profit = balance - bankroll;
+    const roi = profit / bankroll;
+    if (!Number.isFinite(roi)) throw new RangeError('The requested replay exceeds finite numeric precision.');
+    return {
+      initialBalance: bankroll,
+      finalBalance: balance,
+      profit: profit,
+      roi: roi,
+      totalBets: wins + losses,
+      wins: wins,
+      losses: losses,
+      maxDrawdown: maxDrawdown,
+      stopped: stopped,
+      curve: curve,
+    };
+  }
+
+  root.LuckyJetAnalytics = Object.freeze({
+    analyzeHistory: analyzeHistory,
+    runFixedStake: runFixedStake,
+  });
+})(typeof window !== 'undefined' ? window : globalThis);
+
+</script>
 <script id="application">(function () {
   'use strict';
   const runtimeHelp = document.getElementById('runtime-help');
@@ -500,8 +753,77 @@ Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий 
     for (const type of ['hit', 'pending', 'unknown']) $('journal-' + type).textContent = state.journal.filter(entry => entry.status === type).length;
     $('journal-table').innerHTML = state.journal.map(entry => `<tr><td>${formatTime(entry.createdAt, {date: true, seconds: true})}<small style="display:block;color:#69748a">${entry.kind === 'big' ? 'Ce · большое окно' : 'De · обычное окно'}</small></td><td>${coefficient(entry.target)}</td><td>${rangeText(entry.start, entry.end)}</td><td class="result-${escape(entry.status)}">${entry.status === 'hit' ? '✓ Цель достигнута' : entry.status === 'unknown' ? 'Не подтверждено' : 'Ожидает проверки'}</td><td>${entry.status === 'hit' ? number(entry.result) + '× · ' + formatTime(entry.resultAt, {seconds: true}) + '<small style="display:block;color:#657188">' + escape(entry.roundId) + '</small>' : '—'}</td></tr>`).join('') || '<tr><td colspan="5" class="empty-cell">Пока нет окон, созданных при свежем потоке API</td></tr>';
   }
-  function render() {document.querySelectorAll('[data-zone]').forEach(node => {node.textContent = config.timezone === 'UTC' ? 'UTC' : 'Киев';}); renderStatus(); renderMetrics(); renderPrediction(); renderChart(); renderGaps(); renderHistory(); renderJournal();}
-  function tab(name) {if (!['dashboard', 'history', 'journal', 'logic', 'sources'].includes(name)) name = 'dashboard'; state.renderedTab = name; document.querySelectorAll('.view').forEach(view => {view.classList.toggle('active', view.id === 'view-' + name);}); document.querySelectorAll('.nav-item[data-tab]').forEach(button => {button.classList.toggle('active', button.dataset.tab === name);}); try {if (location.hash !== '#' + name && !['about:', 'data:', 'file:'].includes(location.protocol)) history.replaceState(null, '', '#' + name);} catch {} try {window.scrollTo({top: 0, behavior: 'auto'});} catch {}}
+  const Analytics = window.LuckyJetAnalytics;
+  const storedAnalytics = read('analytics-controls', {});
+  const analyticsOptions = {scope: [20, 100, 500, 2000].includes(storedAnalytics.scope) ? storedAnalytics.scope : 2000, bankroll: 1000, stake: 1, target: 2};
+  try {Analytics.runFixedStake([], storedAnalytics); for (const key of ['bankroll', 'stake', 'target']) if (Number.isFinite(storedAnalytics[key])) analyticsOptions[key] = storedAnalytics[key];} catch {}
+  for (const key of ['scope', 'bankroll', 'stake', 'target']) $('analytics-' + key).value = String(analyticsOptions[key]);
+  let analyticsCacheKey = null;
+  let analyticsReplay = null;
+  const analyticsPercent = value => Number.isFinite(value) ? (value * 100).toFixed(1) + '%' : '—';
+  const analyticsCount = value => Number.isFinite(value) ? (Number.isInteger(value) ? String(value) : value.toFixed(1)) : '—';
+
+  function renderAnalyticsLine(id, curve, field, color) {
+    const element = $(id);
+    if (curve.length < 2) {element.innerHTML = '<div class="empty-chart">Загрузите историю для графика</div>'; return;}
+    const width = 720, height = 205, left = 58, right = 14, top = 20, bottom = 174;
+    const values = curve.map(point => point[field]), drawdown = field === 'drawdown';
+    let min = drawdown ? 0 : Math.min(...values), max = Math.max(...values);
+    if (drawdown) max = Math.max(.01, max);
+    else if (min === max) {min = Math.max(0, min - 1); max += 1;}
+    const span = max - min || 1;
+    const X = point => left + point.index / (curve[curve.length - 1].index || 1) * (width - left - right);
+    const Y = value => drawdown ? top + value / span * (bottom - top) : bottom - (value - min) / span * (bottom - top);
+    // Keep both extrema in each bucket so a brief drawdown is visible on mobile.
+    const indices = new Set([0, curve.length - 1]), step = Math.max(1, Math.ceil(curve.length / 180));
+    for (let i = 0; i < curve.length; i += step) {let low = i, high = i; for (let j = i + 1; j < Math.min(i + step, curve.length); j++) {if (curve[j][field] < curve[low][field]) low = j; if (curve[j][field] > curve[high][field]) high = j;} indices.add(low); indices.add(high);}
+    const points = [...indices].sort((a, b) => a - b).map(index => curve[index]);
+    const path = points.map((point, i) => `${i ? 'L' : 'M'}${X(point).toFixed(2)},${Y(point[field]).toFixed(2)}`).join(' ');
+    const format = value => drawdown ? analyticsPercent(value) : number(value);
+    let svg = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${drawdown ? 'Условная просадка' : 'Условный баланс'} по загруженной истории" preserveAspectRatio="none"><title>${drawdown ? 'Просадка от пика' : 'Баланс фиксированной ставки'}</title>`;
+    for (let i = 0; i < 3; i++) {const y = top + i / 2 * (bottom - top), value = drawdown ? min + i / 2 * span : max - i / 2 * span; svg += `<line x1="${left}" x2="${width - right}" y1="${y}" y2="${y}" stroke="#293044" stroke-dasharray="4 5"/><text x="2" y="${y + 4}" fill="#919ab1" font-size="10">${format(value)}</text>`;}
+    svg += `<path d="${path}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round"/><text x="${left}" y="198" fill="#7f89a0" font-size="10">Начало</text><text x="${width - right}" y="198" text-anchor="end" fill="#7f89a0" font-size="10">${curve[curve.length - 1].index} записей</text></svg>`;
+    element.innerHTML = svg;
+  }
+
+  function renderAnalytics() {
+    const rows = state.rows.slice(0, analyticsOptions.scope), report = Analytics.analyzeHistory(rows);
+    $('analytics-total').textContent = String(report.total);
+    const target10 = report.thresholds.find(item => item.target === 10), target100 = report.thresholds.find(item => item.target === 100);
+    $('analytics-ten').textContent = report.total ? analyticsPercent(target10.share) : '—';
+    $('analytics-hundred').textContent = report.total ? analyticsPercent(target100.share) : '—';
+    $('analytics-maximum').textContent = report.total ? number(Math.max(...rows.map(row => row.coefficient))) + '×' : '—';
+    $('analytics-source-kind').textContent = state.mode === 'demo' ? 'УЧЕБНЫЙ ПРИМЕР' : fresh() ? 'НАШ LIVE-АРХИВ' : report.total ? 'ЗАГРУЖЕННАЯ ИСТОРИЯ' : 'НЕТ ДАННЫХ';
+    $('analytics-quality').textContent = report.total ? `${state.sourceName || 'Загруженная история'} · ${report.total} записей · ${formatTime(report.firstAt, {date: true, seconds: true})} — ${formatTime(report.lastAt, {date: true, seconds: true})} · оценочных времён: ${report.estimatedCount}. Порядок и полнота игрового потока не подтверждены.` : 'Загрузите историю. Модельные раунды сторонних сайтов сюда не добавляются.';
+    $('analytics-distribution').innerHTML = report.total ? report.distribution.map(bin => `<div class="analytics-dist-row"><span>${escape(bin.label)}</span><span class="analytics-dist-track"><i style="width:${(bin.share * 100).toFixed(3)}%"></i></span><span class="analytics-dist-values"><b>${analyticsPercent(bin.share)}</b><small>${bin.count} записей</small></span></div>`).join('') : '<p class="analytics-empty">Распределение появится после получения раундов.</p>';
+    $('analytics-thresholds').innerHTML = report.thresholds.map(item => `<tr><td><b>≥${item.target}×</b></td><td>${item.count}<small>${report.total ? analyticsPercent(item.share) : '—'}</small></td><td>${Number.isFinite(item.lastValue) ? number(item.lastValue) + '×' : '—'}<small title="${escape(item.lastId || '')}">${item.lastId ? Number.isFinite(item.lastAt) ? formatTime(item.lastAt, {date: true, seconds: true}) : 'Нет точного времени' : 'Нет в выборке'}</small></td><td>${analyticsCount(item.recordsSince)}</td><td>${analyticsCount(item.medianGapRecords)}</td><td>${Number.isFinite(item.medianGapMs) ? duration(item.medianGapMs) : '—'}</td></tr>`).join('');
+    const key = [state.namespace, state.mode, rows.length, rows[0]?.id, rows[rows.length - 1]?.id, analyticsOptions.bankroll, analyticsOptions.stake, analyticsOptions.target].join('|');
+    if (key !== analyticsCacheKey) {analyticsReplay = Analytics.runFixedStake(rows, analyticsOptions); analyticsCacheKey = key;}
+    const result = analyticsReplay;
+    $('analytics-final-balance').textContent = report.total ? number(result.finalBalance) : '—';
+    $('analytics-profit').textContent = report.total ? (result.profit > 0 ? '+' : '') + number(result.profit) : '—';
+    $('analytics-profit').className = result.profit < 0 ? 'negative' : result.profit > 0 ? 'positive' : '';
+    $('analytics-max-drawdown').textContent = report.total ? analyticsPercent(result.maxDrawdown) : '—';
+    $('analytics-hit-rate').textContent = result.totalBets ? `${result.wins}/${result.totalBets}` : '—';
+    $('analytics-replay-summary').textContent = report.total ? `Расчёт: баланс ${number(analyticsOptions.bankroll)}, ставка ${number(analyticsOptions.stake)}, выход ${number(analyticsOptions.target)}×. Учтено ${result.totalBets} из ${report.total} записей; попаданий ${result.wins}, промахов ${result.losses}. Изменение ${analyticsPercent(result.roi)}.${result.stopped ? ' Проверка остановлена: на полную одинаковую ставку не хватило условных средств.' : ''} Это результат условной проверки, а не выполненных ставок или сигналов De / Ce.` : 'Результат появится после загрузки истории.';
+    renderAnalyticsLine('analytics-balance-chart', report.total ? result.curve : [], 'balance', '#b79bff');
+    renderAnalyticsLine('analytics-drawdown-chart', report.total ? result.curve : [], 'drawdown', '#f39ac6');
+  }
+  $('analytics-scope').addEventListener('change', () => {const scope = Number($('analytics-scope').value); if ([20, 100, 500, 2000].includes(scope)) {analyticsOptions.scope = scope; save('analytics-controls', analyticsOptions); renderAnalytics();}});
+  $('analytics-form').addEventListener('submit', event => {
+    event.preventDefault();
+    const bankroll = Number($('analytics-bankroll').value), stake = Number($('analytics-stake').value), target = Number($('analytics-target').value);
+    if (!Number.isFinite(bankroll) || bankroll <= 0 || bankroll > 1e9) {$('analytics-error').textContent = 'Начальный баланс должен быть больше нуля и не больше 1 000 000 000.'; return;}
+    if (!Number.isFinite(stake) || stake <= 0 || stake > bankroll) {$('analytics-error').textContent = 'Ставка должна быть больше нуля и не превышать начальный баланс.'; return;}
+    if (!Number.isFinite(target) || target < 1.01 || target > 10000) {$('analytics-error').textContent = 'Коэффициент выхода должен быть от 1,01× до 10 000×.'; return;}
+    Object.assign(analyticsOptions, {bankroll, stake, target});
+    $('analytics-error').textContent = '';
+    save('analytics-controls', analyticsOptions);
+    renderAnalytics();
+  });
+
+  function render() {document.querySelectorAll('[data-zone]').forEach(node => {node.textContent = config.timezone === 'UTC' ? 'UTC' : 'Киев';}); renderStatus(); renderMetrics(); renderPrediction(); renderChart(); renderGaps(); renderHistory(); renderJournal(); renderAnalytics();}
+  function tab(name) {if (!['dashboard', 'history', 'analytics', 'journal', 'logic', 'sources'].includes(name)) name = 'dashboard'; state.renderedTab = name; document.querySelectorAll('.view').forEach(view => {view.classList.toggle('active', view.id === 'view-' + name);}); document.querySelectorAll('.nav-item[data-tab]').forEach(button => {button.classList.toggle('active', button.dataset.tab === name);}); try {if (location.hash !== '#' + name && !['about:', 'data:', 'file:'].includes(location.protocol)) history.replaceState(null, '', '#' + name);} catch {} try {window.scrollTo({top: 0, behavior: 'auto'});} catch {}}
   async function requestData() {
     if (!state.running || state.inflight) return;
     state.inflight = true; const controller = new AbortController(); state.controller = controller;
