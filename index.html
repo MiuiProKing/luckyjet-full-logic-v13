@@ -46,6 +46,53 @@
 .journal-summary{grid-template-columns:repeat(4,minmax(0,1fr))}.result-miss{color:var(--pink)}.journal-detail{display:block;color:#7f8aa1;font-size:9px;line-height:1.6;margin-top:5px}.journal-round-id{max-width:280px;white-space:normal;overflow-wrap:anywhere}.journal-status{display:inline-block;padding:5px 8px;border:1px solid currentColor;border-radius:6px;font-size:9px}.journal-result-card{margin-bottom:20px;min-width:0;background:linear-gradient(120deg,#181522,#111722)}.journal-result-card .panel-top{flex-wrap:wrap}.journal-result-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.journal-result-grid>div{min-width:0}.journal-result-grid span{display:block;font-size:9px;color:var(--muted)}.journal-result-grid strong{display:block;margin-top:7px;font-size:23px;font-weight:550;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.journal-result-card>.table-note{overflow-wrap:anywhere;margin-bottom:14px}.journal-result-card .text-button{font-size:10px}.tag.result-hit{color:var(--green)}.tag.result-miss{color:var(--pink)}
 @media(max-width:680px){.journal-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.journal-result-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.journal-result-grid strong{font-size:22px}}
 
+
+/* Experimental marked process: independent from pinned De/Ce windows. */
+.marked-entry{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px;margin-bottom:22px;border-color:rgba(155,107,255,.28);background:linear-gradient(120deg,rgba(122,74,195,.12),rgba(15,108,149,.08))}
+.marked-entry p{color:var(--muted,#a7a1b6);font-size:13px;margin-top:7px;line-height:1.65}
+.marked-entry .button{flex-shrink:0}
+.marked-notice{margin-bottom:18px}
+.marked-status-line{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0 8px;color:#aaa5b9;font-size:12px;line-height:1.7}
+.marked-status-line .tag{white-space:normal}
+.marked-overview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;margin:22px 0}
+.marked-overview>.panel,.marked-panel{padding:24px;min-width:0}
+.marked-panel{margin-bottom:22px}
+.marked-hero-value{display:block;margin:18px 0 7px;font-family:var(--mono,monospace);font-size:clamp(38px,7vw,64px);line-height:1.15;color:#b49aff}
+.marked-event>p{font-size:13px;color:#a9a3b9}
+.marked-horizons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:22px}
+.marked-horizons>div,.marked-mark{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.025);border-radius:13px;padding:13px;min-width:0}
+.marked-horizons span,.marked-mark span{display:block;font-size:11px;color:#aba3bc;line-height:1.65}
+.marked-horizons strong{display:block;font:700 22px var(--mono,monospace);margin-top:6px;color:#d7c6ff}
+.marked-horizons small{display:block;color:#80788f;font-size:10px;margin-top:6px;line-height:1.6}
+.marked-marks{display:grid;gap:9px;margin-top:20px}
+.marked-mark{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px}
+.marked-mark strong{font:700 23px var(--mono,monospace);color:#ffbf76}
+.marked-mark b{font:700 18px var(--mono,monospace);color:#bda9ef}
+.marked-footnote{font-size:11px!important;line-height:1.8!important;color:#938b9f!important;margin-top:16px!important;overflow-wrap:anywhere}
+.marked-time-summary{margin:20px 0;line-height:1.85;font-size:14px;color:#c8b9e3;overflow-wrap:anywhere}
+.marked-table{width:100%;min-width:570px;border-collapse:collapse;font-size:12px}
+.marked-table th{font-size:10px;text-align:left;letter-spacing:.35px;white-space:normal;color:#93899f;padding:12px;border-bottom:1px solid rgba(255,255,255,.08)}
+.marked-table td{padding:14px 12px;border-bottom:1px solid rgba(255,255,255,.06);color:#d1c7e0;font-family:var(--mono,monospace);font-size:12px}
+.marked-table td:first-child{font-family:inherit;line-height:1.7;color:#e2d9ed}
+.marked-table small{display:block;font-size:10px;color:#8d839d;margin-top:4px}
+.marked-analogs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.marked-analog{padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.025);min-width:0}
+.marked-analog>span,.marked-analog small{display:block;color:#998da9;font-size:11px;line-height:1.8;overflow-wrap:anywhere}
+.marked-analog strong{display:block;margin:8px 0;font:700 24px var(--mono,monospace);color:#d1a3f3}
+.marked-evidence-text{font-size:13px;line-height:1.8;color:#b3a5c3;margin-bottom:14px}
+.marked-forward-counters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0}
+.marked-forward-counters>div{min-width:0;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:13px;background:rgba(255,255,255,.02)}
+.marked-forward-counters span{font-size:10px;color:#9e90af;display:block;line-height:1.7}
+.marked-forward-counters strong{font:700 25px var(--mono,monospace);display:block;margin-top:7px;color:#c9b6e9}
+.marked-forward-recent{display:grid;gap:8px;margin-top:18px}
+.marked-forward-row{font-size:11px;color:#b6a5c7;border-top:1px solid rgba(255,255,255,.06);padding-top:10px;line-height:1.8;overflow-wrap:anywhere}
+.marked-method{padding:22px;margin:20px 0}
+.marked-method summary{cursor:pointer;color:#c0a9d9;font-size:13px;font-weight:600}
+.marked-method p{color:#9d8eac;line-height:1.9;font-size:12px;margin-top:14px}
+.marked-method a{color:#c0a4ed}
+.marked-empty{color:#8f829f;font-size:12px;padding:12px;line-height:1.8}
+@media(max-width:720px){.marked-overview{grid-template-columns:minmax(0,1fr);gap:14px;margin:16px 0}.marked-overview>.panel,.marked-panel{padding:18px}.marked-entry{align-items:flex-start;flex-direction:column;padding:18px}.marked-entry .button{width:100%;justify-content:center}.marked-panel>.panel-top{align-items:flex-start;gap:12px;flex-wrap:wrap}.marked-analogs{grid-template-columns:minmax(0,1fr)}.marked-forward-counters{gap:6px}.marked-forward-counters>div{padding:9px}.marked-forward-counters strong{font-size:22px}.marked-horizons>div{padding:10px}.marked-horizons strong{font-size:20px}.marked-table td,.marked-table th{padding-left:9px;padding-right:9px}}
+
 </style>
 </head>
 <body>
@@ -84,6 +131,7 @@
 <main>
   <section id="view-dashboard" class="view active" aria-labelledby="dashboard-title">
     <div class="page-heading"><div><div class="eyebrow">LUCKYJET ANALYTICS</div><h1 id="dashboard-title">Каждый раунд.<br class="mobile-break"> Вся картина.</h1><p>История, циклы и расчётные окна в одной панели.</p></div><div class="heading-actions"><button class="button secondary" data-action="import"><svg class="icon"><use href="#i-upload"/></svg>Импорт</button><button class="button primary" id="run-button" data-action="toggle-run"><svg class="icon"><use href="#i-play"/></svg><span>Подключить API</span></button></div></div>
+    <article class="panel marked-entry"><div><div class="eyebrow">MTPP · ЭКСПЕРИМЕНТ</div><h2>Время и большой X</h2><p>Вероятности 10×+, величина 20× / 50× / 100×, похожие участки и проверка на новых данных.</p></div><button class="button primary" data-tab="model">Открыть модель</button></article>
     <section class="panel live-coefficients" aria-labelledby="live-coefficients-heading">
       <div class="live-coefficients-header"><h2 id="live-coefficients-heading">Коэффициенты LuckyJet</h2><span class="status-pill" id="live-coefficients-status">ЗАГРУЗКА API</span></div>
       <div class="live-coefficient-hero"><strong id="live-coefficient-value" class="live-coefficient-value">—</strong><span id="live-coefficient-caption">Коэффициенты ещё не загружены</span></div>
@@ -110,9 +158,26 @@
     <div class="lower-grid"><article class="panel"><div class="panel-top"><h2>Интервалы крупных раундов</h2><label class="compact-select"><span class="sr-only">Порог крупного коэффициента</span><select id="gap-threshold"><option value="10">от 10×</option><option value="20">от 20×</option><option value="50">от 50×</option><option value="100">от 100×</option></select></label></div><div class="gap-summary"><div><span>Медиана интервала</span><strong id="gap-median">—</strong></div><div><span>MAD интервалов</span><strong id="gap-mad">—</strong></div><div><span>После последнего</span><strong id="gap-age">—</strong></div></div><div class="table-scroll"><table><thead><tr><th>Время · <span data-zone>Киев</span></th><th>Коэффициент</th><th>Интервал</th><th>Раундов*</th></tr></thead><tbody id="gap-table"><tr><td colspan="4" class="empty-cell">История пока не загружена</td></tr></tbody></table></div><p class="table-note">* Количество записей между событиями в доступной истории; пропуски игрового потока не исключены.</p></article><article class="panel recent-panel"><div class="panel-top"><h2>Последние раунды</h2><button class="text-button" data-tab="history">Все<svg class="icon"><use href="#i-arrow"/></svg></button></div><div id="recent-rounds" class="round-grid"></div><div class="streak-row"><span>Серия ниже 2×</span><strong id="streak-value">—</strong></div><div class="streak-row"><span>Временных меток для расчёта</span><strong id="exact-value">0</strong></div><p class="quiet-note">Баллы правил описывают расчёт и не являются измеренной вероятностью выигрыша.</p></article></div>
     <footer class="dashboard-footer"><span id="data-count">0 раундов в истории</span><span><span data-zone>Киев</span> · оригинальные формулы · без случайных прогнозов</span><button class="text-button" data-tab="sources">Источники и ограничения<svg class="icon"><use href="#i-arrow"/></svg></button></footer>
   </section>
+  <section id="view-model" class="view" aria-labelledby="marked-title">
+    <div class="page-heading"><div><div class="eyebrow">MARKED TEMPORAL POINT PROCESS · EXPERIMENT</div><h1 id="marked-title">Время и большой X</h1><p>Вероятность события, величина коэффициента и проверка на следующих данных.</p></div><button class="button secondary" data-tab="analytics">Аналитика истории</button></div>
+    <div class="notice marked-notice">Эксперимент по записям нашего источника. Он не знает будущий краш и не назначает гарантированное время ставки. Полнота и официальный порядок игровых раундов пока не подтверждены.</div>
+    <div class="marked-status-line"><span class="tag" id="marked-status">ОЖИДАНИЕ ДАННЫХ</span><span id="marked-sample">Нужны минимум 200 записей и 15 событий 10×+.</span></div>
+    <p id="marked-quality" class="analytics-quality" role="status"></p>
+    <div class="marked-overview">
+      <article class="panel marked-event"><div class="eyebrow">01 · СОБЫТИЕ ≥10×</div><h2>Следующая запись</h2><strong id="marked-next" class="marked-hero-value">—</strong><p id="marked-next-baseline">Базовая частота: —</p><div id="marked-horizons" class="marked-horizons"></div><p class="marked-footnote">Для 3 / 5 / 10 записей: вероятность хотя бы одного события при неизменной текущей вероятности. Это приближение, а не отдельный точный прогноз каждой записи.</p></article>
+      <article class="panel marked-magnitude"><div class="eyebrow">02 · ВЕЛИЧИНА СОБЫТИЯ</div><h2>Если выпало 10×+</h2><div id="marked-marks" class="marked-marks"></div><p id="marked-range" class="marked-footnote">Диапазон появится после накопления выборки.</p><p class="marked-footnote">Условные шансы относятся только к событиям 10×+. Шанс на ближайшую запись показан отдельно. Верхняя граница диапазона не является максимумом игры.</p></article>
+    </div>
+    <article class="panel marked-panel"><div class="panel-top"><div><div class="eyebrow">03 · МОДЕЛЬ ВРЕМЕНИ</div><h2>Примерный срок результата</h2></div><span class="tag" id="marked-time-status">НЕТ ОЦЕНКИ</span></div><div class="marked-time-summary" id="marked-time-summary">Нужны точные соседние временные метки.</div><div class="table-scroll"><table class="marked-table"><thead><tr><th>Будущих записей</th><th>Медианный срок</th><th>Диапазон 10–90%</th><th>Примерное время результата</th></tr></thead><tbody id="marked-time-table"></tbody></table></div><p class="marked-footnote">Метки относятся к завершённым результатам источника. Расчёт оценивает срок получения результата, а не начало раунда или момент входа. Задержки и пропуски источника могут расширять ошибку.</p></article>
+    <article class="panel marked-panel"><div class="panel-top"><div><div class="eyebrow">04 · ПОХОЖИЕ УЧАСТКИ</div><h2>Что происходило раньше</h2><p id="marked-similar-summary" class="panel-subtitle">Последовательность из 8 записей → следующие 10.</p></div></div><div class="marked-analogs" id="marked-similar"></div><p class="marked-footnote">Показываются завершённые исторические продолжения, без пересечения с текущим участком. Сходство последовательностей не гарантирует повторения результата.</p></article>
+    <article class="panel marked-panel"><div class="panel-top"><div><div class="eyebrow">05 · ХРОНОЛОГИЧЕСКАЯ ПРОВЕРКА</div><h2>Сравнение с базовой частотой</h2><p id="marked-validation-sample" class="panel-subtitle">Обучение только на более ранних записях.</p></div><span class="tag" id="marked-evidence">НЕТ ПРОВЕРКИ</span></div><p class="marked-evidence-text" id="marked-validation-verdict"></p><div class="table-scroll"><table class="marked-table"><thead><tr><th>Проверка</th><th>Модель · Brier</th><th>База · Brier</th><th>Модель · Log loss</th><th>База · Log loss</th><th>Наблюдений</th></tr></thead><tbody id="marked-validation-table"></tbody></table></div><p class="marked-footnote">Обе ошибки: меньше — лучше. База использует только прошлую частоту. Последние 30% истории проверяются последовательно: сначала оценка, потом раскрытие факта и обновление. Это исторический тест; статистическое преимущество отдельно не доказано.</p></article>
+    <article class="panel marked-panel"><div class="panel-top"><div><div class="eyebrow">FORWARD CHECK · В ЭТОМ БРАУЗЕРЕ</div><h2>Проверка новых записей</h2><p id="marked-forward-summary" class="panel-subtitle">Оценки фиксируются до прихода результата.</p></div><button class="button secondary" data-action="export-marked">Скачать проверку</button></div><div class="marked-forward-counters"><div><span>Проверено</span><strong id="marked-forward-count">0</strong></div><div><span>Из них 10×+</span><strong id="marked-forward-events">0</strong></div><div><span>В ожидании</span><strong id="marked-forward-pending">0</strong></div><div><span>Без проверки</span><strong id="marked-forward-unknown">0</strong></div></div><div class="table-scroll"><table class="marked-table"><thead><tr><th>Событие</th><th>Модель · Brier</th><th>База · Brier</th><th>Модель · Log loss</th><th>База · Log loss</th><th>Наблюдений</th></tr></thead><tbody id="marked-forward-table"></tbody></table></div><div id="marked-forward-recent" class="marked-forward-recent"></div><p class="marked-footnote">Журнал локальный и работает, пока страница открыта. Повторная загрузка не создаёт дубликат оценки. Пропуски, запоздавшие или исправленные результаты отмечаются как непроверенные. После закрытия браузера серверное обучение и проверка этим блоком не выполняются.</p></article>
+    <details class="panel marked-method"><summary>Как устроена экспериментальная модель</summary><p>Дискретный процесс с метками: условная вероятность события 10×+ и распределение величины при наступлении события. Вероятность оценивается регуляризованной логистической моделью по предыдущим коэффициентам; метки — сглаженными историческими частотами в похожем контексте. Временные интервалы оцениваются по соседним точным меткам источника.</p><p>Гиперпараметры фиксированы в коде и не подбираются по тестовой части. При недостатке выборки или устаревшем потоке действующая оценка отключается. Редкие 50× / 100× имеют особенно мало проверочных примеров. Эта модель не меняет уже закреплённые окна De / Ce.</p><p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html" target="_blank" rel="noreferrer">Хронологическая проверка</a> · <a href="https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf" target="_blank" rel="noreferrer">Правильные вероятностные оценки</a></p></details>
+  </section>
+
   <section id="view-analytics" class="view" aria-labelledby="analytics-title">
     <div class="page-heading"><div><div class="eyebrow">OBSERVED HISTORY</div><h1 id="analytics-title">Аналитика истории</h1><p>Частоты, крупные коэффициенты и проверка условной фиксированной ставки.</p></div><label class="analytics-scope-label">Выборка<select id="analytics-scope"><option value="2000">До 2000 записей</option><option value="500">Последние 500</option><option value="100">Последние 100</option><option value="20">Последние 20</option></select></label></div>
     <div class="notice">Расчёты используют загруженную историю выбранного источника. Частоты и интервалы описывают прошлое; они не подтверждают повышенный шанс следующего раунда.</div>
+    <article class="panel marked-entry"><div><div class="eyebrow">MTPP · ЭКСПЕРИМЕНТ</div><h2>Время и большой X</h2><p>Вероятности 10×+, величина 20× / 50× / 100×, похожие участки и проверка на новых данных.</p></div><button class="button primary" data-tab="model">Открыть модель</button></article>
     <div class="analytics-summary"><article class="analytics-stat"><span>Записей в выборке</span><strong id="analytics-total">0</strong><small>Объединены по ID</small></article><article class="analytics-stat gold"><span>Частота 10×+</span><strong id="analytics-ten">—</strong><small>Наблюдаемая доля</small></article><article class="analytics-stat gold"><span>Частота 100×+</span><strong id="analytics-hundred">—</strong><small>Наблюдаемая доля</small></article><article class="analytics-stat"><span>Максимальный коэффициент</span><strong id="analytics-maximum">—</strong><small>В выбранной истории</small></article></div>
     <p class="analytics-quality" id="analytics-quality">Загрузите историю для расчёта.</p>
     <article class="panel analytics-panel"><div class="panel-top"><div><h2>Распределение коэффициентов</h2><p class="panel-subtitle">Количество и доля в каждом диапазоне</p></div><span class="tag" id="analytics-source-kind">НЕТ ДАННЫХ</span></div><div id="analytics-distribution" class="analytics-distribution"></div></article>
@@ -642,6 +707,364 @@ Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий 
 })(typeof window !== 'undefined' ? window : globalThis);
 
 </script>
+<script id="marked-core">
+(function (root) {
+  'use strict';
+
+  // A discrete marked process: the event is a completed result >=10x; its
+  // mark is that completed result. It does not inspect an in-flight game.
+  const VERSION = 'recorded-marked-process-1';
+  const CONTEXT = 20, MIN_RECORDS = 200, MIN_EVENTS = 15;
+  const STALE_MS = 180000, MAX_DURATION_MS = 600000;
+  const HORIZONS = Object.freeze([1, 3, 5, 10]);
+  const TARGETS = Object.freeze([20, 50, 100]);
+  const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+  const probability = p => clamp(p, 0.000001, 0.999999);
+  const sigmoid = z => z >= 0 ? 1 / (1 + Math.exp(-z)) : Math.exp(z) / (1 + Math.exp(z));
+  const anyProbability = (p, n) => -Math.expm1(n * Math.log1p(-clamp(p, 0, 1)));
+  const exactTime = row => Number.isFinite(row.timestamp) && row.timestamp > 0 && !row.estimated && row.timeKind !== 'observed';
+
+  function quantile(values, q) {
+    if (!values.length) return null;
+    const sorted = values.slice().sort((a, b) => a - b), pos = (sorted.length - 1) * q;
+    const lo = Math.floor(pos), weight = pos - lo;
+    return sorted[lo] * (1 - weight) + sorted[Math.min(lo + 1, sorted.length - 1)] * weight;
+  }
+
+  function prepare(rows, now) {
+    if (!Array.isArray(rows)) throw new TypeError('History must be an array.');
+    const seen = new Map(), tokens = [];
+    let skipped = 0, duplicates = 0, excludedFuture = 0, conflicts = 0;
+    for (let inputIndex = 0; inputIndex < rows.length; inputIndex++) {
+      const row = rows[inputIndex];
+      // Cut off known-future rows before validation, deduplication, ordering or
+      // conflict decisions. Even a malformed future row cannot affect the past.
+      if (row && typeof row.timestamp === 'number' && Number.isFinite(row.timestamp) && row.timestamp > now) {excludedFuture++; continue;}
+      const idValid = row && (typeof row.id === 'string' && row.id.trim().length > 0 || typeof row.id === 'number' && Number.isFinite(row.id));
+      const coefficientValid = row && typeof row.coefficient === 'number' && Number.isFinite(row.coefficient) && row.coefficient >= 1;
+      if (!idValid || !coefficientValid) {tokens.push({valid:false, inputIndex}); skipped++; continue;}
+      const id = String(row.id);
+      const timestamp = typeof row.timestamp === 'number' && Number.isFinite(row.timestamp) && row.timestamp > 0 && row.timestamp <= 8640000000000000 ? row.timestamp : null;
+      const estimated = row.estimated === true || row.estimated === 'true', timeKind = row.timeKind ?? 'source';
+      if (seen.has(id)) {
+        duplicates++;
+        const previous = seen.get(id);
+        if (previous.coefficient !== row.coefficient || previous.timestamp !== timestamp || previous.estimated !== estimated || previous.timeKind !== timeKind) conflicts++;
+        continue;
+      }
+      const item = {valid:true, id, coefficient:row.coefficient, timestamp, estimated, order:Number.isSafeInteger(row.order) ? row.order : null, timeKind,inputIndex};
+      seen.set(id, item); tokens.push(item);
+    }
+    const valid = tokens.filter(row => row.valid);
+    // Input from the app is newest first. Explicit chronological source times
+    // override that fallback; untimed histories may use their recorded order.
+    const allTimed = valid.length > 0 && valid.every(row => row.timestamp !== null);
+    const allOrdered = valid.length > 0 && valid.every(row => row.order !== null && row.order > 0) && new Set(valid.map(row => row.order)).size === valid.length;
+    let ordering = allTimed ? 'source-time' : allOrdered ? 'ingestion-order' : 'input-newest-first';
+    // Invalid tokens stay as barriers. Their unknown position means that no
+    // duration or similar-sequence sample is certified to cross them.
+    const hadInvalid = skipped > 0;
+    const ordered = valid.slice().sort(allTimed
+      ? (a, b) => a.timestamp - b.timestamp || (a.order ?? 0) - (b.order ?? 0) || a.id.localeCompare(b.id)
+      : allOrdered ? (a, b) => a.order - b.order : (a, b) => b.inputIndex - a.inputIndex);
+    const retained = [];
+    for (let i = 0; i < ordered.length; i++) {
+      const row = ordered[i];
+      retained.push({...row, ordinal:i});
+    }
+    const events = retained.filter(row => row.coefficient >= 10).length;
+    const exact = retained.filter(exactTime), lastAt = exact.length ? Math.max(...exact.map(row => row.timestamp)) : null;
+    return {rows:retained, events, ordering, hadInvalid, skipped, duplicates, excludedFuture, conflicts, lastAt};
+  }
+
+  // All features are bounded, use only the preceding20 observed coefficients,
+  // and have fixed scales. No full-sample standardization or tuning is used.
+  function features(rows, end) {
+    const start = Math.max(0, end - CONTEXT), n = end - start;
+    if (!n) return [1, 0, 0, 0, 0, 0];
+    let logSum = 0, big = 0, low = 0, lastBig = -1;
+    for (let i = start; i < end; i++) {
+      const c = rows[i].coefficient;
+      logSum += Math.log(Math.min(c, 1000)) / Math.log(1000);
+      if (c >= 10) {big++; lastBig = i;}
+      if (i >= end - 5 && c < 2) low++;
+    }
+    const since = lastBig < 0 ? CONTEXT : end - lastBig - 1;
+    return [1, Math.log(Math.min(rows[end - 1].coefficient, 1000)) / Math.log(1000), logSum / n, big / n, Math.log1p(since) / Math.log1p(CONTEXT), low / Math.min(5, n)];
+  }
+
+  function model() {return {weights:[Math.log(1 / 9),0,0,0,0,0], updates:0, count:0, events:0, bins:[0,0,0,0], marked:[]};}
+  function predict(m, x) {return probability(sigmoid(m.weights.reduce((sum, weight, i) => sum + weight * x[i], 0)));}
+  function baseline(m) {return (m.events + 1) / (m.count + 10);}
+  function update(m, x, y, row) {
+    const p = predict(m, x), learningRate = 0.12 / Math.sqrt(1 + m.updates / 400);
+    for (let j = 0; j < m.weights.length; j++) m.weights[j] = clamp(m.weights[j] + learningRate * ((y - p) * x[j] - (j ? 0.02 * m.weights[j] : 0)), -8, 8);
+    m.updates++; m.count++;
+    if (y) {
+      m.events++;
+      const bin = row.coefficient < 20 ? 0 : row.coefficient < 50 ? 1 : row.coefficient < 100 ? 2 : 3;
+      m.bins[bin]++; m.marked.push({coefficient:row.coefficient, features:x.slice()});
+    }
+  }
+
+  function markDistribution(m, x) {
+    const total = m.events + 2, baseBins = m.bins.map(n => (n + 0.5) / total);
+    // Fixed kernel bandwidth and20-event shrinkage prevent a tiny context from
+    // producing unsupported100% tails. Every bin is nonnegative, so tails are
+    // monotone by construction. Hyperparameters are never selected on test.
+    const bins = baseBins.map(p => 20 * p), samples = [];
+    let sum = 0, sumSq = 0;
+    for (const item of m.marked) {
+      let distance = 0;
+      for (let j = 1; j < x.length; j++) distance += (item.features[j] - x[j]) ** 2;
+      const weight = Math.exp(-distance / (2 * 0.35 ** 2));
+      const bin = item.coefficient < 20 ? 0 : item.coefficient < 50 ? 1 : item.coefficient < 100 ? 2 : 3;
+      bins[bin] += weight; sum += weight; sumSq += weight * weight;
+      // The shrinkage distribution is also represented in quantile weights.
+      samples.push({value:item.coefficient, weight:weight + (m.events ? 20 / m.events : 0)});
+    }
+    const denominator = 20 + sum, probabilities = bins.map(n => n / denominator);
+    function tail(b) {return [b[1] + b[2] + b[3], b[2] + b[3], b[3]];}
+    const tails = tail(probabilities), baselineTails = tail(baseBins);
+    function weightedQuantile(q) {
+      if (!samples.length) return null;
+      const sorted = samples.slice().sort((a, b) => a.value - b.value), target = samples.reduce((sum, item) => sum + item.weight, 0) * q;
+      let cumulative = 0;
+      for (const item of sorted) {cumulative += item.weight; if (cumulative >= target) return item.value;}
+      return sorted[sorted.length - 1].value;
+    }
+    return {tails, baselineTails, effective:sumSq ? sum * sum / sumSq : 0, lower:weightedQuantile(.1), median:weightedQuantile(.5), upper:weightedQuantile(.9)};
+  }
+
+  function scoreAccumulator() {return {count:0, positives:0, brier:0, logLoss:0, baselineBrier:0, baselineLogLoss:0};}
+  function score(s, p, b, y) {
+    p = probability(p); b = probability(b);
+    s.count++; s.positives += y;
+    s.brier += (p - y) ** 2; s.baselineBrier += (b - y) ** 2;
+    s.logLoss -= y ? Math.log(p) : Math.log1p(-p);
+    s.baselineLogLoss -= y ? Math.log(b) : Math.log1p(-b);
+  }
+  function finishScore(s) {
+    return {count:s.count, positives:s.positives, negatives:s.count-s.positives, candidateBrier:s.count ? s.brier/s.count : null, baselineBrier:s.count ? s.baselineBrier/s.count : null, candidateLogLoss:s.count ? s.logLoss/s.count : null, baselineLogLoss:s.count ? s.baselineLogLoss/s.count : null, brierGain:s.count ? (s.baselineBrier-s.brier)/s.count : null, logLossGain:s.count ? (s.baselineLogLoss-s.logLoss)/s.count : null};
+  }
+
+  function fitAndValidate(rows) {
+    const n = rows.length, m = model(), split = Math.max(CONTEXT + 1, Math.floor(n * .7));
+    const eventScore = scoreAccumulator(), markScores = TARGETS.map(scoreAccumulator);
+    const horizons = HORIZONS.map(rounds => ({rounds, accumulator:scoreAccumulator()}));
+    // The warmup is history, not a scored prediction or optimized weight fit.
+    for (let i = 0; i < Math.min(CONTEXT, n); i++) {
+      m.count++;
+      if (rows[i].coefficient >= 10) {m.events++; m.bins[rows[i].coefficient < 20 ? 0 : rows[i].coefficient < 50 ? 1 : rows[i].coefficient < 100 ? 2 : 3]++;m.marked.push({coefficient:rows[i].coefficient,features:features(rows,i)});}
+    }
+    for (let i = CONTEXT; i < n; i++) {
+      const x = features(rows, i), p = predict(m, x), b = baseline(m), y = rows[i].coefficient >= 10 ? 1 : 0;
+      if (i >= split) {
+        score(eventScore, p, b, y);
+        for (const h of horizons) {
+          if ((i-split) % h.rounds === 0 && i + h.rounds <= n) {
+            const hit = rows.slice(i, i+h.rounds).some(row => row.coefficient >= 10) ? 1 : 0;
+            score(h.accumulator, anyProbability(p,h.rounds), anyProbability(b,h.rounds), hit);
+          }
+        }
+        // Condition only for evaluation. The row is scored BEFORE it is fed to
+        // either the candidate or expanding baseline mark distribution.
+        if (y) {
+          const marks = markDistribution(m, x);
+          TARGETS.forEach((target,j) => score(markScores[j], marks.tails[j], marks.baselineTails[j], rows[i].coefficient >= target ? 1 : 0));
+        }
+      }
+      update(m, x, y, rows[i]);
+    }
+    const event = finishScore(eventScore), marks = markScores.map((s,i) => ({target:TARGETS[i],...finishScore(s)}));
+    event.horizons = horizons.map(h => ({rounds:h.rounds,...finishScore(h.accumulator)}));
+    const sufficient = event.count >= 300 && event.positives >= 30 && event.negatives >= 30;
+    const advantage = sufficient && event.brierGain > 0 && event.logLossGain > 0;
+    const markedCount = marks[0].count;
+    return {model:m, validation:{method:'chronological-prequential-last-30-percent', trainingRecords:Math.min(split,n), testRecords:event.count, testEvents:event.positives, fromAt:rows[split]?.timestamp ?? null, toAt:rows[n-1]?.timestamp ?? null, event, marks:{count:markedCount, thresholds:marks, candidateBrier:markedCount ? marks.reduce((sum,s) => sum+s.candidateBrier,0)/marks.length : null, baselineBrier:markedCount ? marks.reduce((sum,s) => sum+s.baselineBrier,0)/marks.length : null, evidence:markedCount >= 30 && marks.every(s => s.positives >= 5 && s.negatives >= 5) ? 'preliminary' : 'insufficient'}, evidence:sufficient ? (advantage ? 'preliminary-improvement' : 'no-improvement') : 'insufficient', advantage, assumption:'Последние30% проверены по времени: прогноз до раскрытия результата, затем обновление. Сравнение с растущей частотой; параметры заранее фиксированы. Улучшение оценок на этой выборке не подтверждает точность будущих ставок. Горизонты проверяются без перекрытия внутри каждого горизонта.'}};
+  }
+
+  function durationData(rows, forbidPairs) {
+    const segments = [], intervals = []; let segment = [], excluded = 0;
+    for (let i = 1; i < rows.length; i++) {
+      const previous = rows[i-1], current = rows[i], gap = current.timestamp - previous.timestamp;
+      const usable = !forbidPairs && current.ordinal === previous.ordinal+1 && exactTime(previous) && exactTime(current) && gap > 0 && gap <= MAX_DURATION_MS;
+      if (usable) {intervals.push(gap); segment.push(gap);}
+      else {if (segment.length) segments.push(segment); segment=[]; excluded++;}
+    }
+    if (segment.length) segments.push(segment);
+    return {segments, intervals, excluded};
+  }
+
+  function timingEstimate(data, p, now, lastAt) {
+    if (data.intervals.length < 30 || lastAt === null) return {status:'insufficient',pairs:data.intervals.length,horizons:[],eventWait:null,assumption:'Для времени нужны30 соседних точных меток; оцениваются интервалы завершённых результатов, а не время входа.'};
+    const elapsedMs = Math.max(0, now-lastAt), remaining = data.intervals.filter(ms=>ms>elapsedMs).map(ms=>ms-elapsedMs);
+    if (remaining.length < 10) return {status:'insufficient',pairs:data.intervals.length,elapsedMs,residualSamples:remaining.length,horizons:[],eventWait:null,assumption:'С последнего завершённого результата прошло больше времени, чем поддерживает достаточная часть выборки. Окно не переносится автоматически вперёд; для условной оставшейся длительности нужны10 исторических интервалов длиннее уже прошедшего времени.'};
+    const median = quantile(data.intervals,.5), lower = quantile(data.intervals,.1), upper = quantile(data.intervals,.9);
+    const residualMedian=quantile(remaining,.5),residualLower=quantile(remaining,.1),residualUpper=quantile(remaining,.9);
+    const horizons = HORIZONS.map(rounds => {
+      const sums = [];
+      for (const segment of data.segments) {
+        // Condition the first completion on surviving the already elapsed time,
+        // then subtract that time. Never restart the clock from now+full gap.
+        for (let start=0;start+rounds<=segment.length;start++) {if(segment[start]<=elapsedMs)continue;let sum=-elapsedMs;for(let j=0;j<rounds;j++)sum+=segment[start+j];sums.push(sum);}
+      }
+      const enough=sums.length>=10;
+      return {rounds, samples:sums.length, medianMs:enough ? quantile(sums,.5) : null,lowerMs:enough ? quantile(sums,.1) : null,upperMs:enough ? quantile(sums,.9) : null,fromAt:enough ? now+quantile(sums,.1) : null,toAt:enough ? now+quantile(sums,.9) : null};
+    });
+    function waits(q) {return Math.max(1,Math.ceil(Math.log1p(-q)/Math.log1p(-p)));}
+    const lowerRounds=waits(.1),medianRounds=waits(.5),upperRounds=waits(.9);
+    const lowerMs=residualLower+(lowerRounds-1)*lower,medianMs=residualMedian+(medianRounds-1)*median,upperMs=residualUpper+(upperRounds-1)*upper;
+    return {status:'ready',pairs:data.intervals.length,elapsedMs,residualSamples:remaining.length,durationMedianMs:median,durationLowerMs:lower,durationUpperMs:upper,horizons,eventWait:{lowerRounds,medianRounds,upperRounds,medianMs,lowerMs,upperMs,fromAt:now+lowerMs,toAt:now+upperMs},assumption:'Примерное окно завершения результата по соседним точным меткам. Уже прошедшее время вычтено; первая длительность условна на отсутствие нового завершения. Для1/3/5/10 записей:10–90% исторических сумм. До10×+: геометрическое ожидание с неизменной текущей вероятностью и грубый перевод по длительностям; покрытие не откалибровано. Интервалы>10мин исключены. Текущий раунд и точный момент входа неизвестны.'};
+  }
+
+  function similarSequences(rows, forbidSegments) {
+    const context=8, continuation=10, n=rows.length, currentStart=n-context;
+    if (n < context*2+continuation || forbidSegments) return {context,continuation,matches:[],count:0,bigShare:null,assumption:'Недостаточно непрерывных доступных записей для похожих участков.'};
+    const current=rows.slice(currentStart).map(row=>Math.log(Math.min(row.coefficient,1000))/Math.log(1000));
+    const candidates=[];
+    for (let end=context-1;end+continuation<currentStart;end++) {
+      const start=end-context+1,last=end+continuation;
+      let contiguous=true;
+      for(let i=start+1;i<=last;i++)if(rows[i].ordinal!==rows[i-1].ordinal+1)contiguous=false;
+      if(!contiguous)continue;
+      let distance=0;for(let j=0;j<context;j++)distance+=(Math.log(Math.min(rows[start+j].coefficient,1000))/Math.log(1000)-current[j])**2;
+      const following=rows.slice(end+1,last+1), maximum=following.reduce((a,b)=>b.coefficient>a.coefficient?b:a,following[0]);
+      const first=following.findIndex(row=>row.coefficient>=10);
+      candidates.push({start,last,endId:rows[end].id,endAt:rows[end].timestamp,distance:Math.sqrt(distance/context),outcomeId:maximum.id,outcomeAt:maximum.timestamp,maxCoefficient:maximum.coefficient,firstBigRound:first<0?null:first+1});
+    }
+    candidates.sort((a,b)=>a.distance-b.distance||a.start-b.start);
+    const picked=[];
+    for(const candidate of candidates){if(picked.every(other=>candidate.last<other.start||candidate.start>other.last))picked.push(candidate);if(picked.length===6)break;}
+    return {context,continuation,matches:picked,count:picked.length,bigShare:picked.length?picked.filter(item=>item.firstBigRound!==null).length/picked.length:null,assumption:'6 ближайших неперекрывающихся прошлых участков по8 коэффициентам и их следующие10 доступных записей. Продолжения полностью раньше текущего контекста. Сходство не является проверенной вероятностью.'};
+  }
+
+  function analyze(input, options={}) {
+    const now = options.now === undefined ? Date.now() : options.now;
+    if (!Number.isFinite(now) || now<=0) throw new RangeError('now must be a positive timestamp.');
+    const prepared=prepare(input,now), rows=prepared.rows, gameOrderVerified=options.gameOrderVerified===true;
+    const data=durationData(rows,prepared.hadInvalid), exact=rows.filter(exactTime), estimatedRecords=rows.filter(row=>!exactTime(row)).length;
+    const ageMs=prepared.lastAt===null?null:Math.max(0,now-prepared.lastAt);
+    const warnings=[];
+    if(!gameOrderVerified)warnings.push('Порядок и полнота игровых раундов не подтверждены; далее используются позиции доступных записей.');
+    if(prepared.skipped)warnings.push('Некорректные записи исключены; время и похожие участки не рассчитываются через неизвестные разрывы.');
+    if(estimatedRecords)warnings.push('Оценочные/наблюдённые метки исключены из расчёта длительности.');
+    if(prepared.excludedFuture)warnings.push('Записи позже момента расчёта исключены.');
+    if(prepared.conflicts)warnings.push('Противоречивые коэффициент или время одногоID: модель остановлена.');
+    if(ageMs===null||ageMs>STALE_MS)warnings.push('Нет свежей точной метки: текущий прогноз скрыт.');
+    const quality={records:rows.length,events:prepared.events,timedRecords:exact.length,estimatedRecords,skipped:prepared.skipped,excludedFuture:prepared.excludedFuture,duplicates:prepared.duplicates,durationPairs:data.intervals.length,excludedDurationPairs:data.excluded,lastAt:prepared.lastAt,ageMs,gameOrderVerified,ordering:prepared.ordering,scope:gameOrderVerified?'verified-game-rounds':'available-recorded-positions',warnings};
+    const fit=fitAndValidate(rows), validation=fit.validation, similar=similarSequences(rows,prepared.hadInvalid);
+    const enough=rows.length>=MIN_RECORDS&&prepared.events>=MIN_EVENTS;
+    const status=prepared.conflicts?'invalid':!enough?'insufficient':ageMs===null||ageMs>STALE_MS?'stale':'ready';
+    let event=null,marks=null,timing=null;
+    if(status==='ready') {
+      const x=features(rows,rows.length),p=predict(fit.model,x),base=baseline(fit.model),distribution=markDistribution(fit.model,x);
+      event={threshold:10,nextProbability:p,baselineProbability:base,horizons:HORIZONS.map(rounds=>({rounds,probability:anyProbability(p,rounds),baselineProbability:anyProbability(base,rounds)})),assumption:'Дискретный экспериментальный процесс по доступным записям. Для нескольких записей текущая вероятность10×+ считается неизменной:1−(1−p)^n. Это модельное допущение, не точная вероятность игрового раунда.'};
+      marks={events:prepared.events,effectiveEvents:distribution.effective,thresholds:TARGETS.map((target,j)=>({target,conditionalProbability:distribution.tails[j],baselineConditionalProbability:distribution.baselineTails[j],baselineProbability:distribution.baselineTails[j],baselineNextProbability:base*distribution.baselineTails[j],nextProbability:p*distribution.tails[j]})),median:distribution.median,lower:distribution.lower,upper:distribution.upper,assumption:'Условно на10×+: сглаженное распределение прошлых крупных результатов с весами похожести предыдущего контекста.10–90% взвешенной истории не являются гарантированным диапазоном следующего коэффициента.'};
+      timing=timingEstimate(data,p,now,prepared.lastAt);
+    }
+    return {version:VERSION,status,minimums:{records:MIN_RECORDS,events:MIN_EVENTS,validationRecords:300,validationEvents:30,validationNonEvents:30,durationPairs:30},quality,event,marks,timing,similar,validation};
+  }
+
+  root.LuckyJetMarked=Object.freeze({analyze,version:VERSION});
+})(typeof window==='undefined'?globalThis:window);
+
+</script>
+<script id="marked-audit">
+(function (root) {
+  'use strict';
+  const LIMIT = 500;
+  const prob = value => typeof value === 'number' && Number.isFinite(value) && value > 0 && value < 1;
+  const time = value => typeof value === 'number' && Number.isFinite(value) && value > 0;
+  function valid(entry) {
+    return entry && typeof entry.id === 'string' && typeof entry.namespace === 'string' && typeof entry.version === 'string' && typeof entry.anchorId === 'string' && time(entry.createdAt) && time(entry.anchorAt) && prob(entry.p) && prob(entry.baseline) && ['pending', 'scored', 'unknown'].includes(entry.status);
+  }
+  function clean(entries) {
+    if (!Array.isArray(entries)) return [];
+    const seen = new Set();
+    return entries.filter(entry => {
+      if (!valid(entry) || seen.has(entry.id)) return false;
+      seen.add(entry.id); return true;
+    }).slice(0, LIMIT).map(entry => ({...entry}));
+  }
+  function exactRows(rows, now) {
+    const seen = new Map(), conflicts = new Set();
+    const ordered = (Array.isArray(rows) ? rows : []).filter(row => {
+      if (!row || row.id == null || !time(row.timestamp) || row.timestamp > now || !Number.isFinite(row.coefficient) || row.coefficient < 1) return false;
+      const id = String(row.id), previous = seen.get(id);
+      if (previous) {
+        if (previous.coefficient !== row.coefficient || previous.timestamp !== row.timestamp || !!previous.estimated !== !!row.estimated) conflicts.add(id);
+        return false;
+      }
+      seen.set(id, row); return true;
+    }).slice().sort((a, b) => a.timestamp - b.timestamp || (a.order || 0) - (b.order || 0));
+    return {ordered, conflicts};
+  }
+  function update(entries, rows, {namespace, now = Date.now()} = {}) {
+    const retained = clean(entries), {ordered, conflicts} = exactRows(rows, now);
+    const byId = new Map(ordered.map((row, index) => [String(row.id), index]));
+    return retained.map(entry => {
+      if (entry.status === 'unknown' || entry.namespace !== namespace) return entry;
+      const index = byId.get(entry.anchorId);
+      if (index == null) {
+        if (entry.status === 'pending' && ordered.length && ordered[0].timestamp > entry.anchorAt) return {...entry, status: 'unknown', reason: 'anchor-missing'};
+        return entry;
+      }
+      const next = ordered[index + 1];
+      if (conflicts.has(entry.anchorId) || ordered[index].estimated || ordered[index].timestamp !== entry.anchorAt || (Number.isFinite(entry.anchorCoefficient) && ordered[index].coefficient !== entry.anchorCoefficient)) return {...entry, status: 'unknown', reason: 'anchor-conflict'};
+      if (entry.status === 'scored') {
+        if (next && (String(next.id) !== entry.outcomeId || next.timestamp !== entry.outcomeAt || next.coefficient !== entry.actual || next.estimated || next.timestamp <= entry.createdAt || conflicts.has(String(next.id)))) return {...entry, status: 'unknown', reason: 'backfilled-successor'};
+        return entry;
+      }
+      if (!next) return now - entry.createdAt > 15 * 60000 ? {...entry, status: 'unknown', reason: 'expired'} : entry;
+      // Never score a delayed/backfilled outcome that had already happened at issuance.
+      // The first available successor cannot be skipped in favour of a later record.
+      if (conflicts.has(String(next.id)) || next.estimated || ordered[index].estimated || next.timestamp <= entry.createdAt || next.timestamp <= entry.anchorAt || next.timestamp - entry.anchorAt > 180000) return {...entry, status: 'unknown', reason: 'unverifiable-successor'};
+      return {...entry, status: 'scored', outcomeId: String(next.id), outcomeAt: next.timestamp, actual: next.coefficient, y: next.coefficient >= 10 ? 1 : 0};
+    });
+  }
+  function issue(entries, report, {namespace, anchor, now = Date.now(), live = false} = {}) {
+    const retained = clean(entries);
+    if (!live || typeof namespace !== 'string' || !namespace || typeof report?.version !== 'string' || !report.version || report?.status !== 'ready' || !prob(report.event?.nextProbability) || !prob(report.event?.baselineProbability) || !anchor || anchor.id == null || String(anchor.id).length === 0 || anchor.estimated || !time(anchor.timestamp) || anchor.timestamp > now || now - anchor.timestamp > 180000 || !Number.isFinite(anchor.coefficient)) return retained;
+    const version = String(report.version), anchorId = String(anchor.id);
+    const id = namespace + '|' + version + '|' + anchorId;
+    if (retained.some(entry => entry.id === id)) return retained;
+    // One unresolved forecast per source/model: reloading a page cannot manufacture
+    // multiple scored samples for the same future source record.
+    if (retained.some(entry => entry.namespace === namespace && entry.version === version && entry.status === 'pending')) return retained;
+    const marks = (report.marks?.thresholds || []).filter(item => prob(item.conditionalProbability) && prob(item.baselineConditionalProbability)).map(item => ({target: item.target, p: item.conditionalProbability, baseline: item.baselineConditionalProbability}));
+    return [{id, namespace, version, anchorId, anchorAt: anchor.timestamp, anchorCoefficient: anchor.coefficient, createdAt: now, status: 'pending', p: report.event.nextProbability, baseline: report.event.baselineProbability, marks}, ...retained].slice(0, LIMIT);
+  }
+  function score(samples, pKey = 'p', bKey = 'baseline') {
+    let cb = 0, bb = 0, cl = 0, bl = 0;
+    for (const item of samples) {
+      const p = Math.max(1e-6, Math.min(1 - 1e-6, item[pKey]));
+      const b = Math.max(1e-6, Math.min(1 - 1e-6, item[bKey]));
+      cb += (p - item.y) ** 2; bb += (b - item.y) ** 2;
+      cl -= item.y * Math.log(p) + (1 - item.y) * Math.log1p(-p);
+      bl -= item.y * Math.log(b) + (1 - item.y) * Math.log1p(-b);
+    }
+    const n = samples.length;
+    return {count: n, candidateBrier: n ? cb / n : null, baselineBrier: n ? bb / n : null, candidateLogLoss: n ? cl / n : null, baselineLogLoss: n ? bl / n : null};
+  }
+  function summarize(entries, {namespace, version} = {}) {
+    const relevant = clean(entries).filter(entry => entry.namespace === namespace && entry.version === version);
+    const samples = relevant.filter(entry => entry.status === 'scored' && [0, 1].includes(entry.y) && Number.isFinite(entry.actual) && entry.actual >= 1);
+    const event = score(samples);
+    const marks = [20, 50, 100].map(target => {
+      const selected = samples.filter(entry => entry.y === 1).map(entry => {
+        const mark = entry.marks?.find(item => item.target === target);
+        return mark && prob(mark.p) && prob(mark.baseline) ? {p: mark.p, baseline: mark.baseline, y: entry.actual >= target ? 1 : 0} : null;
+      }).filter(Boolean);
+      return {target, ...score(selected)};
+    });
+    const events = samples.filter(entry => entry.y === 1).length;
+    return {total: relevant.length, pending: relevant.filter(entry => entry.status === 'pending').length, unknown: relevant.filter(entry => entry.status === 'unknown').length, events, event, marks, sufficient: samples.length >= 200 && events >= 20, samples: samples.slice(0, 8)};
+  }
+  root.LuckyJetMarkedAudit = Object.freeze({clean, update, issue, summarize});
+})(typeof window === 'undefined' ? globalThis : window);
+
+</script>
 <script id="application">(function () {
   'use strict';
   const runtimeHelp = document.getElementById('runtime-help');
@@ -922,8 +1345,85 @@ Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий 
     renderAnalytics();
   });
 
-  function render() {document.querySelectorAll('[data-zone]').forEach(node => {node.textContent = config.timezone === 'UTC' ? 'UTC' : 'Киев';}); renderStatus(); renderMetrics(); renderPrediction(); renderChart(); renderGaps(); renderHistory(); renderJournal(); renderAnalytics();}
-  function tab(name) {if (!['dashboard', 'history', 'analytics', 'journal', 'logic', 'sources'].includes(name)) name = 'dashboard'; state.renderedTab = name; document.querySelectorAll('.view').forEach(view => {view.classList.toggle('active', view.id === 'view-' + name);}); document.querySelectorAll('.nav-item[data-tab]').forEach(button => {button.classList.toggle('active', button.dataset.tab === name);}); try {if (location.hash !== '#' + name && !['about:', 'data:', 'file:'].includes(location.protocol)) history.replaceState(null, '', '#' + name);} catch {} try {window.scrollTo({top: 0, behavior: 'auto'});} catch {}}
+  const Marked = window.LuckyJetMarked, MarkedAudit = window.LuckyJetMarkedAudit;
+  let markedCacheKey = '', markedReport = null;
+  let markedLedger = MarkedAudit.clean(read('marked-forward-v1', []));
+  const markedPercent = value => Number.isFinite(value) ? (value * 100).toFixed(1) + '%' : '—';
+  const markedError = value => Number.isFinite(value) ? value.toFixed(4) : '—';
+  const markedSpan = value => {
+    if (!Number.isFinite(value)) return '—';
+    const seconds = Math.max(0, Math.round(value / 1000));
+    return seconds < 60 ? seconds + ' с' : Math.floor(seconds / 60) + ' мин' + (seconds % 60 ? ' ' + seconds % 60 + ' с' : '');
+  };
+  function markedRevision() {
+    let hash = 2166136261;
+    const now = Date.now();
+    for (const row of state.rows) {
+      const token = [row.id, row.coefficient, row.timestamp, row.estimated, row.timeKind, row.order, Number.isFinite(row.timestamp) && row.timestamp <= now].join(':');
+      for (let i = 0; i < token.length; i++) hash = Math.imul(hash ^ token.charCodeAt(i), 16777619);
+    }
+    return [state.namespace, state.mode, state.rows.length, hash >>> 0].join('|');
+  }
+  function markedScoreRow(label, values, count) {
+    return `<tr><td>${escape(label)}</td><td>${markedError(values?.candidateBrier)}</td><td>${markedError(values?.baselineBrier)}</td><td>${markedError(values?.candidateLogLoss)}</td><td>${markedError(values?.baselineLogLoss)}</td><td>${Number.isFinite(count) ? count : 0}</td></tr>`;
+  }
+  function refreshMarked() {
+    const revision = markedRevision();
+    if (revision !== markedCacheKey || !markedReport) {
+      markedReport = Marked.analyze(state.rows, {now: Date.now(), gameOrderVerified: false});
+      markedCacheKey = revision;
+    }
+    const now = Date.now();
+    markedLedger = MarkedAudit.update(markedLedger, state.rows, {namespace: state.namespace, now});
+    const chronological = state.rows.filter(row => Number.isFinite(row.timestamp) && row.timestamp <= now).slice().sort((a,b) => b.timestamp - a.timestamp || b.order - a.order);
+    markedLedger = MarkedAudit.issue(markedLedger, markedReport, {namespace: state.namespace, anchor: chronological[0], now, live: fresh() && !state.error && state.mode !== 'demo'});
+    save('marked-forward-v1', markedLedger);
+  }
+  function renderMarked() {
+    refreshMarked();
+    const report = markedReport, quality = report.quality;
+    const sourceCurrent = fresh() && !state.error && state.mode !== 'demo';
+    // Rechecking freshness does not refit on every countdown tick.
+    const available = sourceCurrent && report.status === 'ready' && Number.isFinite(quality.lastAt) && Date.now() - quality.lastAt <= 180000;
+    const event = available ? report.event : null, marks = available ? report.marks : null, timing = available ? report.timing : null;
+    $('marked-status').textContent = state.mode === 'demo' ? 'УЧЕБНЫЕ ДАННЫЕ' : report.status === 'invalid' ? 'КОНФЛИКТ ДАННЫХ' : report.status === 'insufficient' ? 'МАЛО ДАННЫХ' : available ? 'ЭКСПЕРИМЕНТ · LIVE' : 'АРХИВ · ОЦЕНКА СКРЫТА';
+    $('marked-sample').textContent = `${quality.records} доступных записей · ${quality.events} событий ≥10× · версия ${report.version}`;
+    $('marked-quality').textContent = [Number.isFinite(quality.lastAt) ? 'Последняя точная метка: ' + formatTime(quality.lastAt, {date: true, seconds: true}) : 'Нет точных меток.', `${quality.durationPairs} соседних временных интервалов`, ...quality.warnings].join(' · ');
+    $('marked-next').textContent = markedPercent(event?.nextProbability);
+    $('marked-next-baseline').textContent = 'Базовая частота: ' + markedPercent(event?.baselineProbability);
+    $('marked-horizons').innerHTML = [3,5,10].map(n => {
+      const h = event?.horizons.find(item => item.rounds === n);
+      return `<div><span>${n} записей</span><strong>${markedPercent(h?.probability)}</strong><small>База ${markedPercent(h?.baselineProbability)}</small></div>`;
+    }).join('');
+    $('marked-marks').innerHTML = [20,50,100].map(target => {
+      const item = marks?.thresholds.find(mark => mark.target === target);
+      return `<div class="marked-mark"><div><b>≥${target}×</b><span>Среди 10×+ · база ${markedPercent(item?.baselineConditionalProbability)}</span><span>На следующую запись: ${markedPercent(item?.nextProbability)}</span></div><strong>${markedPercent(item?.conditionalProbability)}</strong></div>`;
+    }).join('');
+    $('marked-range').textContent = marks ? `Взвешенная история 10×+: медиана ${number(marks.median)}× · диапазон 10–90% ${number(marks.lower)}–${number(marks.upper)}×. Событий: ${marks.events}; эффективная контекстная выборка: ${number(marks.effectiveEvents, 1)}.` : 'Для текущей оценки нужны минимум 200 записей, 15 событий 10×+ и свежий поток. Исторический тест показан ниже.';
+    $('marked-time-status').textContent = timing?.status === 'ready' ? 'ПРИМЕРНОЕ ОКНО' : 'НЕТ ОЦЕНКИ';
+    const wait = timing?.eventWait;
+    $('marked-time-summary').textContent = wait ? `До следующего события 10×+: медиана ${wait.medianRounds} записей (около ${markedSpan(wait.medianMs)}). Грубый диапазон ${markedSpan(wait.lowerMs)} — ${markedSpan(wait.upperMs)}; покрытие диапазона ещё не проверено.` : 'Текущего окна нет. Для оценки времени нужны свежие данные и минимум 30 точных соседних интервалов. Точное время ставки эта модель не определяет.';
+    $('marked-time-table').innerHTML = timing?.horizons?.length ? timing.horizons.map(h => `<tr><td>${h.rounds}</td><td>${markedSpan(h.medianMs)}</td><td>${markedSpan(h.lowerMs)} — ${markedSpan(h.upperMs)}</td><td>${formatTime(h.fromAt, {seconds:true})} — ${formatTime(h.toAt, {seconds:true})}<small>${h.samples || 0} исторических сумм · <span data-zone>${config.timezone === 'UTC' ? 'UTC' : 'Киев'}</span></small></td></tr>`).join('') : '<tr><td colspan="4">Временная оценка недоступна</td></tr>';
+    const similar = report.similar;
+    $('marked-similar-summary').textContent = similar.count ? `${similar.count} неперекрывающихся участков · 8 предыдущих записей → 10 следующих · 10×+ встретился в ${markedPercent(similar.bigShare)} продолжений.` : 'Недостаточно завершённых участков для сравнения.';
+    $('marked-similar').innerHTML = similar.matches.length ? similar.matches.map(item => `<article class="marked-analog"><span>Контекст до ${formatTime(item.endAt, {date:true,seconds:true})}</span><strong>${number(item.maxCoefficient)}×</strong><small>Максимум в следующих 10 записях · ${formatTime(item.outcomeAt, {date:true,seconds:true})}</small><small>${item.firstBigRound ? 'Первый 10×+ на записи №' + item.firstBigRound : '10×+ не встретился'}</small><small>ID максимума: ${escape(item.outcomeId)}</small></article>`).join('') : '<p class="marked-empty">Похожие исторические продолжения появятся после загрузки истории.</p>';
+    const validation = report.validation;
+    $('marked-validation-sample').textContent = `Начальная история: ${validation.trainingRecords} · проверено: ${validation.testRecords} · из них 10×+: ${validation.testEvents} · ${formatTime(validation.fromAt, {date:true,seconds:true})} — ${formatTime(validation.toAt, {date:true,seconds:true})}`;
+    $('marked-evidence').textContent = validation.evidence === 'insufficient' ? 'МАЛО ПРИМЕРОВ' : validation.advantage ? 'ОШИБКИ НИЖЕ В ЭТОМ ТЕСТЕ' : 'ПРЕИМУЩЕСТВА НЕ ВИДНО';
+    $('marked-validation-verdict').textContent = validation.evidence === 'insufficient' ? 'Проверочная выборка пока мала. Преимущество перед базовой частотой не подтверждено.' : validation.advantage ? 'На этой более поздней части истории обе ошибки вероятности 10×+ ниже базовых. Нужна дальнейшая проверка на новых данных; это не подтверждённая точность входа.' : 'В этом тесте модель не улучшила одновременно Brier и Log loss относительно базовой частоты. Оснований повышать доверие к прогнозу пока нет.';
+    $('marked-validation-table').innerHTML = markedScoreRow('10×+ · следующая запись', validation.event, validation.testRecords) + (validation.event?.horizons || []).filter(h => h.rounds !== 1).map(h => markedScoreRow('10×+ · ' + h.rounds + ' записей', h, h.count)).join('') + (validation.marks?.thresholds || []).map(item => markedScoreRow('≥' + item.target + '× при 10×+', item, item.count) + `<tr><td colspan="6"><small>Положительных ≥${item.target}×: ${item.positives || 0}; остальных: ${item.negatives || 0}. ${validation.marks.evidence === 'insufficient' ? 'Мало примеров для вывода о метках.' : 'Проверка меток предварительная.'}</small></td></tr>`).join('');
+    const forward = MarkedAudit.summarize(markedLedger, {namespace: state.namespace, version: report.version});
+    $('marked-forward-count').textContent = String(forward.event.count);
+    $('marked-forward-events').textContent = String(forward.events);
+    $('marked-forward-pending').textContent = String(forward.pending);
+    $('marked-forward-unknown').textContent = String(forward.unknown);
+    $('marked-forward-summary').textContent = forward.sufficient ? 'Накоплен минимальный объём; ниже ошибки зафиксированных до результата оценок. Статистическое преимущество не установлено.' : 'Идёт накопление: ориентир минимум 200 проверенных записей и 20 событий 10×+. Оценки сохраняются до прихода результата.';
+    $('marked-forward-table').innerHTML = markedScoreRow('10×+ · следующая запись', forward.event, forward.event.count) + forward.marks.map(item => markedScoreRow('≥' + item.target + '× при 10×+', item, item.count)).join('');
+    $('marked-forward-recent').innerHTML = forward.samples.length ? forward.samples.slice(0,5).map(item => `<div class="marked-forward-row">Оценка ${formatTime(item.createdAt,{seconds:true})}: P(10×+) ${markedPercent(item.p)} · факт ${number(item.actual)}× в ${formatTime(item.outcomeAt,{seconds:true})}<br>ID: ${escape(item.outcomeId)}</div>`).join('') : '<p class="marked-empty">Первые проверенные оценки появятся после новых записей LIVE. Прошлым результатам задним числом они не назначаются.</p>';
+  }
+
+  function render() {document.querySelectorAll('[data-zone]').forEach(node => {node.textContent = config.timezone === 'UTC' ? 'UTC' : 'Киев';}); renderStatus(); renderMetrics(); renderPrediction(); renderChart(); renderGaps(); renderHistory(); renderJournal(); renderAnalytics(); renderMarked();}
+  function tab(name) {if (!['dashboard', 'history', 'analytics', 'model', 'journal', 'logic', 'sources'].includes(name)) name = 'dashboard'; state.renderedTab = name; document.querySelectorAll('.view').forEach(view => {view.classList.toggle('active', view.id === 'view-' + name);}); document.querySelectorAll('.nav-item[data-tab]').forEach(button => {button.classList.toggle('active', button.dataset.tab === (name === 'model' ? 'analytics' : name));}); try {if (location.hash !== '#' + name && !['about:', 'data:', 'file:'].includes(location.protocol)) history.replaceState(null, '', '#' + name);} catch {} try {window.scrollTo({top: 0, behavior: 'auto'});} catch {}}
   async function requestData() {
     if (!state.running || state.inflight) return;
     state.inflight = true; const controller = new AbortController(); state.controller = controller;
@@ -1024,6 +1524,7 @@ Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий 
     else if (action === 'import') $('import-file').click();
     else if (action === 'demo') loadExample();
     else if (action === 'export-json') exportRows('json');
+    else if (action === 'export-marked') download('LuckyJet_marked_process_check.json', JSON.stringify({format: 'LuckyJet marked process validation v1', exportedAt: new Date().toISOString(), model: markedReport?.version, historicalValidation: markedReport?.validation, forecasts: markedLedger.filter(entry => entry.namespace === state.namespace)}, null, 2));
     else if (action === 'export-csv') exportRows('csv');
     else if (action === 'export-example') download('LuckyJet_DEMO_format_example.json', JSON.stringify(examplePayload(), null, 2));
     else if (action === 'export-journal') download('LuckyJet_window_journal.json', JSON.stringify({format: 'LuckyJet Full Logic journal v1', exportedAt: new Date().toISOString(), windows: state.journal}, null, 2));
@@ -1046,8 +1547,9 @@ Authorization: Bearer ВАШ_КЛЮЧ</pre><p>Нужен действующий 
   window.addEventListener('beforeunload', () => {state.controller?.abort(); persistRows(); save('journal', state.journal);});
   $('engine-source').textContent = $('analysis-core').textContent;
   calculate(); render(); tab(location.hash.slice(1) || 'dashboard');
-  function tick() {if (state.journal.some(entry => entry.status === 'pending' && Date.now() > entry.end)) renderJournal(); $('kyiv-clock').textContent = new Intl.DateTimeFormat('ru-RU', {timeZone: supportedZone('Europe/Kyiv'), hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'}).format(Date.now()); renderCountdown(); const active = fresh(); if (active !== state.wasFresh) {state.wasFresh = active; renderStatus(); renderPrediction();}}
+  function tick() {if (state.journal.some(entry => entry.status === 'pending' && Date.now() > entry.end)) renderJournal(); $('kyiv-clock').textContent = new Intl.DateTimeFormat('ru-RU', {timeZone: supportedZone('Europe/Kyiv'), hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'}).format(Date.now()); renderCountdown(); const active = fresh(); if (active !== state.wasFresh) {state.wasFresh = active; renderStatus(); renderPrediction(); renderMarked();}}
   tick(); setInterval(tick, 1000);
+  setInterval(() => {if (state.renderedTab === 'model') renderMarked();}, 15000);
   setInterval(() => {if (fresh()) {calculate(); evaluateJournal(); renderPrediction(); renderGaps(); renderJournal();}}, 8000);
   if (config.source === 'supabase') start();
   if (runtimeHelp) runtimeHelp.hidden = true;
